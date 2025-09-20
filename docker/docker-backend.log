@@ -1,0 +1,712 @@
+[2025-09-20T11:25:25.649354200Z][com.docker.backend.exe.tasks][I] starting 1/1 com.docker.extensions.exe --address \\.\pipe\dockerExtensionManagerAPI
+[2025-09-20T11:25:25.649354200Z][com.docker.backend.exe.tasks][I] starting 1/1 docker.exe serve --address npipe://\\.\pipe\dockerCliApi
+[2025-09-20T11:25:25.649354200Z][com.docker.backend.exe.tasks][I] starting 1/1 com.docker.dev-envs.exe -watchdog
+[2025-09-20T11:25:25.660042700Z][com.docker.backend.exe.tasks][I] started  1/1 docker.exe
+[2025-09-20T11:25:25.703878200Z][com.docker.backend.exe.update][I] WSL Updater: version is 2.0.9.0. an update is not required
+[2025-09-20T11:25:25.704425000Z][com.docker.backend.exe.sys][I] Ensure WslUpdateRequired setting: WslUpdateRequired = false
+[2025-09-20T11:25:25.704954000Z][com.docker.backend.exe.registry][I] autoLogin
+[2025-09-20T11:25:25.706026900Z][com.docker.backend.exe.engines][I] engine starting with settings: {"AnalyticsEnabled":true,"Cpus":12,"CustomWslDistroDir":"","DataFolder":"C:\\ProgramData\\DockerDesktop\\vm-data","DefaultSnapshotter":"overlayfs","DeprecatedCgroupv1":false,"DiskSizeMiB":65536,"DiskStats":"","DiskTRIM":true,"EnableSocksProxyPort":false,"EnhancedContainerIsolation":false,"ExposeDockerAPIOnTCP2375":false,"FilesharingDirectories":[],"HostNetworkingEnabled":false,"KernelForUDP":false,"LifecycleTimeoutSeconds":600,"MemoryMiB":2048,"NetworkType":"gvisor","NoWindowsContainers":false,"OverrideProxyExclude":"","OverrideWindowsDockerdPort":"float64","RunWinServiceInWslMode":false,"SocksProxyPort":0,"SwapMiB":1024,"UseContainerdSnapshotter":false,"UseGrpcfuse":true,"UseVirtualizationFramework":false,"UseVirtualizationFrameworkRosetta":false,"UseVirtualizationFrameworkVirtioFS":false,"UseWindowsContainers":false,"VpnkitCIDR":"1...4","WslEnableGrpcfuse":false,"WslEngineEnabled":true,"WslInstallMode":"installLatestWsl","WslUpdateRequired":false}
+[2025-09-20T11:25:25.711975000Z][com.docker.backend.exe.clicontext][I] updated docker cli context desktop-linux
+[2025-09-20T11:25:25.712513800Z][com.docker.backend.exe.engines][I] initialising linux engine
+[2025-09-20T11:25:25.712513800Z][com.docker.backend.exe.engines][I] starting engine linux
+[2025-09-20T11:25:25.713051800Z][com.docker.backend.exe.events][I] adding server timestamp to event (engines): 1758367525712513800 docker: starting
+[2025-09-20T11:25:25.713051800Z][com.docker.backend.exe.state][I] backend state changed to starting
+[2025-09-20T11:25:25.713051800Z][com.docker.backend.exe.state][I] sending desktop state:EngineStartingState
+[2025-09-20T11:25:25.713051800Z][com.docker.backend.exe.statehandler][I] sending to Dashboard: starting
+[2025-09-20T11:25:25.713051800Z][com.docker.backend.exe.ipcstream][I] 1223629d-BackendAPI /engine/state --> [2025-09-20T16:55:25.712513800+05:30] (9e558353) engine starting : 
+[2025-09-20T11:25:25.714117200Z][com.docker.backend.exe.enginedependencies][I] resetting socket forwarder
+[2025-09-20T11:25:25.714117200Z][com.docker.backend.exe.socketforwarder][I] socketforwarder: already stopped
+[2025-09-20T11:25:25.714117200Z][com.docker.backend.exe.tracker][I] sending event: desktopState
+[2025-09-20T11:25:25.714117200Z][com.docker.backend.exe.socketforwarder][I] WSL engine enabled so delaying start
+[2025-09-20T11:25:25.714117200Z][com.docker.backend.exe.enginedependencies][I] closing all network connections
+[2025-09-20T11:25:25.714117200Z][com.docker.backend.exe.engines][I] waiting for linux VM to start
+[2025-09-20T11:25:25.714640300Z][com.docker.backend.exe.engines][I] running engine linux
+[2025-09-20T11:25:25.761208000Z][com.docker.backend.exe.tasks][I] started  1/1 com.docker.extensions.exe
+[2025-09-20T11:25:25.761725100Z][com.docker.backend.exe.tasks][I] writing to C:\Program Files\Docker\Docker\resources\com.docker.extensions.exe
+[2025-09-20T11:25:25.765943200Z][com.docker.backend.exe.tasks][I] started  1/1 com.docker.dev-envs.exe
+[2025-09-20T11:25:25.767711900Z][com.docker.backend.exe.tasks][I] writing to C:\Program Files\Docker\Docker\resources\com.docker.dev-envs.exe
+[2025-09-20T11:25:25.777747700Z][com.docker.backend.exe.tasks][I] started  1/1 com.docker.build.exe
+[2025-09-20T11:25:25.909756800Z][com.docker.backend.exe.ipc][I] (7dbe9385) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /ping
+[2025-09-20T11:25:25.909756800Z][com.docker.backend.exe.ipc][I] (7dbe9385) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /ping (0s): {"serverTime":1758367525909757000}
+[2025-09-20T11:25:25.911303300Z][com.docker.backend.exe.ipc][I] (2c53b60b) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:25.911303300Z][com.docker.backend.exe.ipc][I] (2c53b60b) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:25.911827700Z][com.docker.backend.exe.ipc][I] (79ad3b86) 1223629d-BackendAPI S<-C 6ff5fec0-desktop_extensions GET /forwards/list
+[2025-09-20T11:25:25.917134100Z][com.docker.backend.exe.tasks][I] done writing to C:\Program Files\Docker\Docker\resources\com.docker.extensions.exe
+[2025-09-20T11:25:25.917134100Z][com.docker.backend.exe.tasks][I] done writing to C:\Program Files\Docker\Docker\resources\com.docker.dev-envs.exe
+[2025-09-20T11:25:25.935854900Z][com.docker.backend.exe.registry][I] restoring Auth0 login from credential store map[]
+[2025-09-20T11:25:25.935854900Z][com.docker.backend.exe.registry][I] logging out from credentials store
+[2025-09-20T11:25:26.064718600Z][com.docker.backend.exe.features][I] user logged out, online features will be disabled
+[2025-09-20T11:25:26.064718600Z][com.docker.backend.exe.features][I] entitlement: {PlanName:personal Desktop:{Enabled:false} Logged:false}
+[2025-09-20T11:25:26.064718600Z][com.docker.backend.exe.adminsettings][I] admin controls manager received new entitlement:{"Logged":false,"desktop":{"enabled":false},"plan_name":"personal"}
+[2025-09-20T11:25:26.068381200Z][com.docker.backend.exe.registryaccess][I] User has logged out so pausing background Registry Access Management policy refresh
+[2025-09-20T11:25:26.068381200Z][com.docker.backend.exe.ipcstream][I] 1223629d-BackendAPI /proxy-control --> [2025-09-20T16:55:26.068381200+05:30] (6403d0aa) proxy  : {"Locked":false,"MustLogIn":false,"Restricted":false,"User":""}
+[2025-09-20T11:25:26.068381200Z][com.docker.backend.exe.registryaccess][I] Registry Access Management policy refresh due after 0001-01-01 00:00:00 +0000 UTC, grace ends 0001-01-01 00:00:00 +0000 UTC, grace interval 0s
+[2025-09-20T11:25:26.069408500Z][com.docker.backend.exe.ipc][I] 52eb0ff8-DockerApiProxyBackendClient /proxy-control <-- [2025-09-20T16:55:26.068381200+05:30] (6403d0aa) proxy  : {"Locked":false,"MustLogIn":false,"Restricted":false,"User":""}
+[2025-09-20T11:25:26.069408500Z][com.docker.backend.exe.tracker][I] sending identify event
+[2025-09-20T11:25:26.069408500Z][com.docker.backend.exe.updater][I] using appcast URL: https://desktop.docker.com/win/main/amd64/appcast.xml
+[2025-09-20T11:25:26.125073600Z][com.docker.backend.exe.tasks.build][I] 2025-09-20 11:25:26 [I] starting desktop-build/v0.10.0-rc.1 go/1.21.8 windows/amd64
+[2025-09-20T11:25:26.125581700Z][com.docker.backend.exe.tasks.build][I] 2025-09-20 11:25:26 [I] bugsnag configured
+[2025-09-20T11:25:26.127708400Z][com.docker.backend.exe.tasks.build][I] 2025-09-20 11:25:26 [I] current docker context: default
+[2025-09-20T11:25:26.132701700Z][com.docker.backend.exe.apiproxy][I] >> POST /grpc
+[2025-09-20T11:25:26.133257400Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/grpc": no connected NIC
+[2025-09-20T11:25:26.133257400Z][com.docker.backend.exe.tasks.build][I] 2025-09-20 11:25:26 [W] failed to dial docker daemon on desktop-linux context: unable to upgrade to h2c, received 500
+[2025-09-20T11:25:26.164539400Z][com.docker.backend.exe.updater][I] appcast parsed : &{{ } 2.0 http://www.andymatuschak.org/xml-namespaces/sparkle http://purl.org/dc/elements/1.1/ http://www.docker.com/docker-for-windows {Docker for Win https://desktop.docker.com/win/main/amd64/204649/DockerDesktop.msi [{4.46.0 (204649) ( [EditionID] != Home && [EditionID] != HomeEval && [EditionID] != Core && [EditionID] != CoreN && [EditionID] != CoreSingleLanguage && [EditionID] != CoreCountrySpecific && [BuildNumber] >= 19044 ) || ( [BuildNumber] >= 19044 )  2025-09-11T14:53:06Z {<p>You can see the latest release notes <a href="https://docs.docker.com/desktop/release-notes/">here</a>.</p>} [{{ highlights} {- Added a new Learning center walkthrough for Docker MCP Toolkit and made other onboarding improvements so you can get started quickly and easily.
+- Administrators can now control PAC configurations with Settings Management.
+- The update experience has been redesigned to make it easier to understand and manage updates for Docker Desktop and its components.
+}}] {https://desktop.docker.com/win/main/amd64/204649/DockerDesktop.msi 204649 4.46.0 591388080 application/octet-stream https://desktop.docker.com/win/main/amd64/204649/Docker%20Desktop%20Installer.exe 203075 } 0xc000c86798 100}]}} - targetURL: 
+[2025-09-20T11:25:26.164539400Z][com.docker.backend.exe.updater][I] new update state: found update: https://desktop.docker.com/win/main/amd64/204649/Docker%20Desktop%20Installer.exe
+[2025-09-20T11:25:26.164539400Z][com.docker.backend.exe.updater][I] checking for new update in background: found update: https://desktop.docker.com/win/main/amd64/204649/Docker%20Desktop%20Installer.exe
+[2025-09-20T11:25:26.243273800Z][com.docker.backend.exe.sysevents][I] watching registry key Software\Microsoft\Windows\CurrentVersion\Internet Settings for HTTP proxies
+[2025-09-20T11:25:26.612119700Z][com.docker.backend.exe.ipc][I] 52eb0ff8-DockerApiProxyBackendClient /pause/state <-- [2025-09-20T16:55:25.612286800+05:30] (8e2a557a) pause resumed : init
+[2025-09-20T11:25:26.612119700Z][com.docker.backend.exe.ipc][I] 52eb0ff8-DockerApiProxyBackendClient /pause/state <-- [2025-09-20T16:55:26.612119700+05:30] (92d2a87e) ipc ready : <nil>
+[2025-09-20T11:25:26.612119700Z][com.docker.backend.exe.ipcstream][I] LastEvent: /pause/state server sync completed
+[2025-09-20T11:25:26.612119700Z][com.docker.backend.exe.apiproxy][I] >> HEAD /_ping
+[2025-09-20T11:25:26.612119700Z][com.docker.backend.exe.apiproxy][I] >> HEAD /_ping
+[2025-09-20T11:25:26.612119700Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": no connected NIC
+[2025-09-20T11:25:26.612119700Z][com.docker.backend.exe.apiproxy][I] >> HEAD /_ping
+[2025-09-20T11:25:26.612119700Z][com.docker.backend.exe.apiproxy][I] >> HEAD /_ping
+[2025-09-20T11:25:26.612646400Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": no connected NIC
+[2025-09-20T11:25:26.612646400Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": no connected NIC
+[2025-09-20T11:25:26.612646400Z][com.docker.backend.exe.events][I] adding server timestamp to event (): 1758367526612646400 dockerAPI: running (API proxy is serving requests) 
+[2025-09-20T11:25:26.612646400Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": no connected NIC
+[2025-09-20T11:25:26.612646400Z][com.docker.backend.exe.statehandler][I] sending to Dashboard: starting
+[2025-09-20T11:25:26.614273100Z][com.docker.backend.exe.tasks.build][I] 2025-09-20 11:25:26 [I] builder manager started
+[2025-09-20T11:25:26.614802700Z][com.docker.backend.exe.apiproxy][I] >> HEAD /_ping
+[2025-09-20T11:25:26.614802700Z][com.docker.backend.exe.tasks.build][I] 2025-09-20 11:25:26 [I] build manager started
+[2025-09-20T11:25:26.614802700Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": no connected NIC
+[2025-09-20T11:25:26.614802700Z][com.docker.backend.exe.tasks.build][I] 2025-09-20 11:25:26 [I] starting server (socket=\\.\pipe\dockerDesktopBuildServer)
+[2025-09-20T11:25:26.615497900Z][com.docker.backend.exe.ipc][I] (6122fa38) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:26.615497900Z][com.docker.backend.exe.ipc][I] (262f5372) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:26.615497900Z][com.docker.backend.exe.ipc][I] (6122fa38) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:26.616004700Z][com.docker.backend.exe.ipc][I] (262f5372) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (506.8µs)
+[2025-09-20T11:25:26.616658000Z][com.docker.backend.exe.ipc][I] (932df210) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:26.616658000Z][com.docker.backend.exe.ipc][I] (932df210) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:26.616658000Z][com.docker.backend.exe.apiproxy][I] >> HEAD /_ping
+[2025-09-20T11:25:26.616658000Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": no connected NIC
+[2025-09-20T11:25:26.617199400Z][com.docker.backend.exe.apiproxy][I] >> GET /v1.24/events?filters=%7B%22event%22%3A%7B%22die%22%3Atrue%2C%22start%22%3Atrue%7D%2C%22type%22%3A%7B%22container%22%3Atrue%7D%7D
+[2025-09-20T11:25:26.617199400Z][com.docker.backend.exe.ipc][I] (99e8cf81) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:26.617199400Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/v1.24/events?filters=%7B%22event%22%3A%7B%22die%22%3Atrue%2C%22start%22%3Atrue%7D%2C%22type%22%3A%7B%22container%22%3Atrue%7D%7D": no connected NIC
+[2025-09-20T11:25:26.617749800Z][com.docker.backend.exe.ipc][I] (99e8cf81) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (550.4µs)
+[2025-09-20T11:25:26.617749800Z][com.docker.backend.exe.tasks.build][I] 2025-09-20 11:25:26 [I] notifying bugsnag: failed to listen to docker events: request returned Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/events?filters=%7B%22event%22%3A%7B%22die%22%3Atrue%2C%22start%22%3Atrue%7D%2C%22type%22%3A%7B%22container%22%3Atrue%7D%7D, check if the server supports the requested API version
+[2025-09-20T11:25:26.617749800Z][com.docker.backend.exe.tasks.build][I] 2025-09-20 11:25:26 [E] failed to listen to docker events: request returned Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/events?filters=%7B%22event%22%3A%7B%22die%22%3Atrue%2C%22start%22%3Atrue%7D%2C%22type%22%3A%7B%22container%22%3Atrue%7D%7D, check if the server supports the requested API version
+[2025-09-20T11:25:26.625937000Z][com.docker.backend.exe.ipc][I] (89036f94) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:26.625937000Z][com.docker.backend.exe.ipc][I] (89036f94) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:26.680417600Z][com.docker.backend.exe.wslengine][I] wslEngine: starting WSL engine
+[2025-09-20T11:25:26.680417600Z][com.docker.backend.exe.events][I] adding server timestamp to event (wslengine): 1758367526680417600 (starting WSL engine) 
+[2025-09-20T11:25:26.680417600Z][com.docker.backend.exe.statehandler][I] sending to Dashboard: starting
+[2025-09-20T11:25:26.680417600Z][com.docker.backend.exe.wslprovisioner][I] wslEngine: gettings app settings
+[2025-09-20T11:25:26.895505000Z][com.docker.backend.exe.wslprovisioner][I] WSLProvisioning: checking docker-desktop
+[2025-09-20T11:25:27.214493100Z][com.docker.backend.exe.socketforward][I] error copying: io: read/write on closed pipe
+[2025-09-20T11:25:27.232124900Z][com.docker.backend.exe.features][E] unleash:  GET https://hub.docker.com/v2/feature-flags/proxy/client/features returned status code 401
+[common/cmd/com.docker.backend/internal/features.(*debugListener).OnError(0xc000c86618, {0x2f53200, 0xc000aee6a0})
+[	common/cmd/com.docker.backend/internal/features/unleashremote.go:107 +0x11e
+[github.com/Unleash/unleash-client-go/v3.(*Client).sync(0xc000c47800)
+[	github.com/Unleash/unleash-client-go/v3@v3.9.2/client.go:210 +0x388
+[created by github.com/Unleash/unleash-client-go/v3.NewClient.func1 in goroutine 546
+[	github.com/Unleash/unleash-client-go/v3@v3.9.2/client.go:129 +0x56
+[2025-09-20T11:25:27.232673300Z][com.docker.backend.exe.features][W] unleash: https://hub.docker.com/v2/feature-flags/proxy/client/register return 401
+[2025-09-20T11:25:27.232124900Z][com.docker.backend.exe.features][I] unleash client encountered an error, proceeding without sync
+[2025-09-20T11:25:27.234265000Z][com.docker.backend.exe.features][E] unleash:  segment does not exist
+[common/cmd/com.docker.backend/internal/features.(*debugListener).OnError(0xc000c86618, {0x2f53200, 0xc0005aad90})
+[	common/cmd/com.docker.backend/internal/features/unleashremote.go:107 +0x11e
+[github.com/Unleash/unleash-client-go/v3.(*Client).sync(0xc000c47800)
+[	github.com/Unleash/unleash-client-go/v3@v3.9.2/client.go:210 +0x388
+[created by github.com/Unleash/unleash-client-go/v3.NewClient.func1 in goroutine 546
+[	github.com/Unleash/unleash-client-go/v3@v3.9.2/client.go:129 +0x56
+[2025-09-20T11:25:27.234265000Z][com.docker.backend.exe.features][I] remote feature flag configuration changed feature KubernetesReportErrors from {false } to {true }
+[2025-09-20T11:25:27.234265000Z][com.docker.backend.exe.features][I] remote feature flag configuration changed feature InAppFeedback from {false } to {true }
+[2025-09-20T11:25:27.234265000Z][com.docker.backend.exe.features][I] remote feature flag configuration changed feature BuildsViewEAPBanner from {false } to {true }
+[2025-09-20T11:25:27.234265000Z][com.docker.backend.exe.features][I] remote feature flag configuration changed feature BuildsViewGABanner from {false } to {true }
+[2025-09-20T11:25:27.234265000Z][com.docker.backend.exe.features][I] remote feature flag configuration changed feature ContainerdNotification from {true } to {false }
+[2025-09-20T11:25:27.234265000Z][com.docker.backend.exe.features][I] remote feature flag configuration changed feature VolumesBackupAndShare from {false } to {true }
+[2025-09-20T11:25:27.234265000Z][com.docker.backend.exe.features][I] remote feature flag configuration changed feature GSExtensionsTest from {false } to {true }
+[2025-09-20T11:25:27.234265000Z][com.docker.backend.exe.features][I] remote feature flag configuration changed feature LearningCenterAIML from {false } to {true }
+[2025-09-20T11:25:28.705129800Z][com.docker.backend.exe.ipc][I] (b90c1fae) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /install/events
+[2025-09-20T11:25:28.705129800Z][com.docker.backend.exe.ipc][I] (8564be2d) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /engine/events
+[2025-09-20T11:25:28.705129800Z][com.docker.backend.exe.ipc][I] (c1b2643f) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /kubernetes/events
+[2025-09-20T11:25:28.705639000Z][com.docker.backend.exe.ipc][I] (158d8f99) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /pause/events
+[2025-09-20T11:25:28.705639000Z][com.docker.backend.exe.ipc][I] (e6c27137) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /notify/messagebox/events
+[2025-09-20T11:25:28.705639000Z][com.docker.backend.exe.ipc][I] (232b5520) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /update/events
+[2025-09-20T11:25:28.705639000Z][com.docker.backend.exe.ipc][I] (6317b39d) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /registry/state
+[2025-09-20T11:25:28.705639000Z][com.docker.backend.exe.ipc][I] (0ce49573) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /license/events
+[2025-09-20T11:25:28.706166900Z][com.docker.backend.exe.ipc][I] (ce1692ee) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /mutagen/file-shares/stream
+[2025-09-20T11:25:28.706166900Z][com.docker.backend.exe.ipc][I] (e9c5ce43) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /wasm/events
+[2025-09-20T11:25:28.706166900Z][com.docker.backend.exe.ipc][I] (1286f5d6) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /settings/analytics-permission/stream
+[2025-09-20T11:25:28.707756500Z][com.docker.backend.exe.ipc][I] (0dd7384b) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:28.707756500Z][com.docker.backend.exe.ipc][I] (0dd7384b) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:28.921519200Z][com.docker.backend.exe.ipc][I] (d3a7ce45) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /features
+[2025-09-20T11:25:28.924442000Z][com.docker.backend.exe.ipc][I] (d3a7ce45) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /features (2.9228ms)
+[2025-09-20T11:25:30.422338600Z][com.docker.backend.exe.ipc][I] (1fb37c88) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /ping
+[2025-09-20T11:25:30.422338600Z][com.docker.backend.exe.ipc][I] (1fb37c88) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /ping (0s): {"serverTime":1758367530422338600}
+[2025-09-20T11:25:30.535311000Z][com.docker.backend.exe.segment][I] flushing 3 messages
+[2025-09-20T11:25:30.585272200Z][com.docker.backend.exe.ipc][I] (e97d646e) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /versions
+[2025-09-20T11:25:30.585272200Z][com.docker.backend.exe.ipc][I] (e97d646e) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /versions (0s): {"WSLBootstrapVersion":"0f1ef778533a33dae6b6c16ffd26f7e1","appVersion":"4.29.0","buildNumber":"145265","channel":"main","composeVersion":"v2.26.1-desktop.1","credentialHelpersVersion":"v0.8.1","dockerCLIVersion":"26.0.0","engineVersion":"26.0.0","gitCommit":"de5482fc30291839ca1b64fee623c5ec2661745d","kubernetesVersion":"v1.29.2","linuxVersion":"v6.6.22","profile":"production"}
+[2025-09-20T11:25:30.585780200Z][com.docker.backend.exe.ipc][I] (9df83619) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /app/settings
+[2025-09-20T11:25:30.586318500Z][com.docker.backend.exe.daemonconfigloader][I] get daemon config: {"builder":{"gc":{"defaultKeepStorage":"20GB","enabled":true}},"experimental":false}
+[2025-09-20T11:25:30.613605200Z][com.docker.backend.exe.ipc][I] (e42c806e) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /backend/state
+[2025-09-20T11:25:30.613605200Z][com.docker.backend.exe.ipc][I] (e42c806e) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /backend/state (0s): {"docker":"starting","dockerAPI":"running","idle":"r...g","isPaused":false,"mode":"linux","pauseError":"","pauseText":"","sessionID":"3...a","state":"starting"}
+[2025-09-20T11:25:30.614317600Z][com.docker.backend.exe.ipc][I] (f9c7b9fb) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /docker
+[2025-09-20T11:25:30.614317600Z][com.docker.backend.exe.ipc][I] (f9c7b9fb) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /docker (0s): {"docker":"starting","dockerAPI":"running","idle":"r...g","isPaused":false,"mode":"linux","pauseError":"","pauseText":"","sessionID":"3...a","state":"starting"}
+[2025-09-20T11:25:30.614317600Z][com.docker.backend.exe.ipc][I] (1f06ea04) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /kubernetes
+[2025-09-20T11:25:30.614824500Z][com.docker.backend.exe.ipc][I] (1f06ea04) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /kubernetes (0s): {"content":"Kubernetes is stopped","id":"e...a","source":"kubernetes","status":"disabled","timestamp":1758367525505043500}
+[2025-09-20T11:25:30.614824500Z][com.docker.backend.exe.ipc][I] (307298c8) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /features
+[2025-09-20T11:25:30.614824500Z][com.docker.backend.exe.ipc][I] (5cbd261f) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /features
+[2025-09-20T11:25:30.614824500Z][com.docker.backend.exe.ipc][I] (271b5573) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /install/check
+[2025-09-20T11:25:30.618551400Z][com.docker.backend.exe.ipc][I] (307298c8) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /features (3.7269ms)
+[2025-09-20T11:25:30.619989000Z][com.docker.backend.exe.ipc][I] (5cbd261f) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /features (5.1645ms)
+[2025-09-20T11:25:30.620527800Z][com.docker.backend.exe.ipc][I] (271b5573) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /install/check (5.7033ms): {"valid":"bool"}
+[2025-09-20T11:25:30.671081900Z][com.docker.backend.exe.eci][I] WSL version (2.0.9.0) meets ECI requirement (>= 1.1.3)
+[2025-09-20T11:25:30.749373600Z][com.docker.backend.exe.eci][I] WSL kernel version (5.15.133) meets ECI requirement (>= 5.15)
+[2025-09-20T11:25:30.750950800Z][com.docker.backend.exe.ipc][I] (9df83619) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /app/settings (165.1706ms)
+[2025-09-20T11:25:30.771464500Z][com.docker.backend.exe.ipc][I] (e66b4095) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:30.771464500Z][com.docker.backend.exe.ipc][I] (e66b4095) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:30.788640900Z][com.docker.backend.exe.ipc][I] (3bc2f7aa) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:30.790291800Z][com.docker.backend.exe.ipc][I] (3bc2f7aa) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (1.6509ms)
+[2025-09-20T11:25:31.377483300Z][com.docker.backend.exe.segment][I] response 200 OK
+[2025-09-20T11:25:31.580323600Z][com.docker.backend.exe.ipc][I] (5880b61c) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:31.580323600Z][com.docker.backend.exe.ipc][I] (5880b61c) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:31.585268500Z][com.docker.backend.exe.ipc][I] (117d31f7) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /features
+[2025-09-20T11:25:31.585268500Z][com.docker.backend.exe.ipc][I] (85560356) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /app/settings
+[2025-09-20T11:25:31.585800500Z][com.docker.backend.exe.daemonconfigloader][I] get daemon config: {"builder":{"gc":{"defaultKeepStorage":"20GB","enabled":true}},"experimental":false}
+[2025-09-20T11:25:31.585800500Z][com.docker.backend.exe.ipc][I] (4084c223) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /versions
+[2025-09-20T11:25:31.585800500Z][com.docker.backend.exe.ipc][I] (4084c223) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /versions (0s): {"WSLBootstrapVersion":"0f1ef778533a33dae6b6c16ffd26f7e1","appVersion":"4.29.0","buildNumber":"145265","channel":"main","composeVersion":"v2.26.1-desktop.1","credentialHelpersVersion":"v0.8.1","dockerCLIVersion":"26.0.0","engineVersion":"26.0.0","gitCommit":"de5482fc30291839ca1b64fee623c5ec2661745d","kubernetesVersion":"v1.29.2","linuxVersion":"v6.6.22","profile":"production"}
+[2025-09-20T11:25:31.586327200Z][com.docker.backend.exe.ipc][I] (85560356) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /app/settings (1.0587ms)
+[2025-09-20T11:25:31.586327200Z][com.docker.backend.exe.ipc][I] (117d31f7) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /features (1.0587ms)
+[2025-09-20T11:25:31.586327200Z][com.docker.backend.exe.ipc][I] (e84281d4) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /system/editor
+[2025-09-20T11:25:31.586878700Z][com.docker.backend.exe.ipc][I] (191b7bd1) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /system/info
+[2025-09-20T11:25:31.586878700Z][com.docker.backend.exe.ipc][I] (191b7bd1) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /system/info (0s): {}
+[2025-09-20T11:25:31.587491100Z][com.docker.backend.exe.ipc][I] (81a655e4) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /install/check
+[2025-09-20T11:25:31.587996800Z][com.docker.backend.exe.ipc][I] (81a655e4) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /install/check (505.7µs): {"valid":"bool"}
+[2025-09-20T11:25:31.587996800Z][com.docker.backend.exe.ipc][I] (9f0da0a7) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /backend/state
+[2025-09-20T11:25:31.587996800Z][com.docker.backend.exe.ipc][I] (9f0da0a7) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /backend/state (0s): {"docker":"starting","dockerAPI":"running","idle":"r...g","isPaused":false,"mode":"linux","pauseError":"","pauseText":"","sessionID":"3...a","state":"starting"}
+[2025-09-20T11:25:31.589081200Z][com.docker.backend.exe.ipc][I] (de01fece) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /uuid
+[2025-09-20T11:25:31.589671800Z][com.docker.backend.exe.ipc][I] (de01fece) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /uuid (590.6µs): OK
+[2025-09-20T11:25:31.592863700Z][com.docker.backend.exe.ipc][I] (c4cd66dd) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /stats
+[2025-09-20T11:25:31.592863700Z][com.docker.backend.exe.ipc][I] (ff2ef372) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /kubernetes
+[2025-09-20T11:25:31.592863700Z][com.docker.backend.exe.ipc][I] (19a12aca) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /docker
+[2025-09-20T11:25:31.592863700Z][com.docker.backend.exe.ipc][I] (ff2ef372) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /kubernetes (0s): {"content":"Kubernetes is stopped","id":"e...a","source":"kubernetes","status":"disabled","timestamp":1758367525505043500}
+[2025-09-20T11:25:31.593388600Z][com.docker.backend.exe.ipc][I] (19a12aca) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /docker (0s): {"docker":"starting","dockerAPI":"running","idle":"r...g","isPaused":false,"mode":"linux","pauseError":"","pauseText":"","sessionID":"3...a","state":"starting"}
+[2025-09-20T11:25:31.593388600Z][com.docker.backend.exe.ipc][I] (78c0d3fc) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:31.593388600Z][com.docker.backend.exe.ipc][I] (78c0d3fc) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:31.686697400Z][com.docker.backend.exe.ipc][I] (e84281d4) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /system/editor (100.3702ms): {"command":"\u003cHOME\u003e\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\Code.cmd","id":"v...e","name":"Visual Studio Code"}
+[2025-09-20T11:25:31.896229600Z][com.docker.backend.exe.ipc][I] (fa8c6a92) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:31.896229600Z][com.docker.backend.exe.ipc][I] (fa8c6a92) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:31.897290200Z][com.docker.backend.exe.ipc][I] (24feaf05) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:31.897463500Z][com.docker.backend.exe.ipc][I] (24feaf05) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (173.3µs)
+[2025-09-20T11:25:31.898418400Z][com.docker.backend.exe.ipc][I] (15f82565) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:31.898953500Z][com.docker.backend.exe.ipc][I] (15f82565) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (535.1µs)
+[2025-09-20T11:25:31.900595900Z][com.docker.backend.exe.ipc][I] (a86f0149) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) POST /analytics/track
+[2025-09-20T11:25:31.900595900Z][com.docker.backend.exe.ipc][I] (a86f0149) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) bind: {"body":{"action":"EngineScreenDisplayed","state":"EngineStarting"},"event":"eventEngineState"}
+[2025-09-20T11:25:31.902827300Z][com.docker.backend.exe.ipc][I] (a86f0149) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) POST /analytics/track (2.2314ms): OK
+[2025-09-20T11:25:31.902827300Z][com.docker.backend.exe.tracker][I] sending event: eventEngineState
+[2025-09-20T11:25:31.978607200Z][com.docker.backend.exe.ipc][I] (b0e6b980) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:31.979148100Z][com.docker.backend.exe.ipc][I] (b0e6b980) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (540.9µs)
+[2025-09-20T11:25:33.074884200Z][com.docker.backend.exe.wslprovisioner][I] WSLProvisioning: checking docker-desktop-data
+[2025-09-20T11:25:33.074884200Z][com.docker.backend.exe.wslprovisioner][I] wslEngine: running docker-desktop-data keep alive
+[2025-09-20T11:25:33.427232400Z][com.docker.backend.exe.ipc][I] (5a2fed58) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 POST /usage
+[2025-09-20T11:25:33.427232400Z][com.docker.backend.exe.ipc][I] (5a2fed58) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 bind: {"command":"info","context":"moby","count":1,"duration_secs":0.301019,"invocations_from_terminal":1,"source":"cli","status":"failure"}
+[2025-09-20T11:25:33.427232400Z][com.docker.backend.exe.ipc][I] (5a2fed58) 0e46de2b-CLIAPI S->C Go-http-client/1.1 POST /usage (0s): OK
+[2025-09-20T11:25:34.529085200Z][com.docker.backend.exe.logwriterwithscanner][I] <3>WSL (8) ERROR: CreateProcessParseCommon:754: getpwuid(0) failed 2
+[2025-09-20T11:25:34.529692700Z][com.docker.backend.exe.logwriterwithscanner][I] <3>WSL (8) ERROR: CreateProcessEntryCommon:331: getpwuid(0) failed 2
+[2025-09-20T11:25:34.557101600Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.557794900Z][wsl-keepalive][I] setting up
+[2025-09-20T11:25:34.561003800Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.560386800Z][wsl-keepalive][I] reading mountinfo
+[2025-09-20T11:25:34.562706500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.562577100Z][wsl-keepalive][I] creating bind mount <HOME>isocache
+[2025-09-20T11:25:34.562706500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.562822000Z][wsl-keepalive][I] creating bind mount <HOME>data
+[2025-09-20T11:25:34.562706500Z][com.docker.backend.exe.wslprovisioner][I] WSLKeepAlive: ready
+[2025-09-20T11:25:34.562706500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.562924900Z][wsl-keepalive][I] waiting for signal
+[2025-09-20T11:25:34.562706500Z][com.docker.backend.exe.wslengine][I] wslEngine: starting Linuxkit distro
+[2025-09-20T11:25:34.562706500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: running 'wsl C:\WINDOWS\System32\wsl.exe -d docker-desktop -u root -e wsl-bootstrap run --base-image /c/Program Files/Docker/Docker/resources/docker-desktop.iso --cli-iso /c/Program Files/Docker/Docker/resources/wsl/docker-wsl-cli.iso'
+[2025-09-20T11:25:34.573064900Z][com.docker.backend.exe.wslengine][I] wslEngine: start Windows-side processes
+[2025-09-20T11:25:34.573064900Z][com.docker.backend.exe.socketforwarder][I] socketforwarder: already stopped
+[2025-09-20T11:25:34.573064900Z][com.docker.backend.exe.socketforwarder][I] connecting to distro docker-desktop
+[2025-09-20T11:25:34.573064900Z][com.docker.backend.exe.socketforwarder][I] start
+[2025-09-20T11:25:34.573570700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: waiting
+[2025-09-20T11:25:34.573802400Z][com.docker.backend.exe.socketforward][I] not forwarding ssh-auth: ssh auth socket forwarding not available on Windows
+[2025-09-20T11:25:34.573802400Z][com.docker.backend.exe.wslengine][I] wslEngine: starting integration service
+[2025-09-20T11:25:34.574365500Z][com.docker.backend.exe.socketforward][I] connecting to WSL distro docker-desktop
+[2025-09-20T11:25:34.574365500Z][com.docker.backend.exe.engines][I] VM is ready
+[2025-09-20T11:25:34.574365500Z][com.docker.backend.exe.wslengine][I] wslEngine: started
+[2025-09-20T11:25:34.574365500Z][com.docker.backend.exe.socketforward][I] running remote vpnkit bridge: C:\WINDOWS\System32\wsl.exe -d docker-desktop -e /usr/bin/vpnkit-bridge --pid-file=/run/vpnkit-bridge.pid guest
+[2025-09-20T11:25:34.574365500Z][com.docker.backend.exe.wslintegration][I] settingswatcher: starting to watch for settings changes
+[2025-09-20T11:25:34.574870600Z][com.docker.backend.exe.wslintegration][I] new settings received: {{false false false} {true []} false false}
+[2025-09-20T11:25:34.574870600Z][com.docker.backend.exe.wslintegration][I] sending new settings
+[2025-09-20T11:25:34.574870600Z][com.docker.backend.exe.engines][I] waiting for Docker API to be ready
+[2025-09-20T11:25:34.575449800Z][com.docker.backend.exe.wslintegration][I] running integration loop
+[2025-09-20T11:25:34.575449800Z][com.docker.backend.exe.wslintegration][I] updating integration, default distro: true, additional distros: [], kubernetes enabled: false, kubernetes listener active: false, mustMergeKubeconfig: false
+[2025-09-20T11:25:34.575449800Z][com.docker.backend.exe.wslintegration][I] starting distro watcher
+[2025-09-20T11:25:34.581987600Z][com.docker.backend.exe.socketforward][I] connected to WSL distro docker-desktop
+[2025-09-20T11:25:34.688291900Z][com.docker.backend.exe.wslintegration][I] current active agents before sync: 0
+[2025-09-20T11:25:34.688291900Z][com.docker.backend.exe.wslintegration][I] active agents: 0
+[2025-09-20T11:25:34.688291900Z][com.docker.backend.exe.wslintegration][I] done syncing agents
+[2025-09-20T11:25:34.711464700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.707978000Z][wsl-bootstrap][I] no bootstrap pid file, assuming previous bootstrap is already stopped
+[2025-09-20T11:25:34.711464700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.707978000Z][wsl-bootstrap][I] no bootstrap pid file, assuming previous bootstrap is already stopped
+[2025-09-20T11:25:34.711464700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.711210500Z][wsl-bootstrap][I] provisioning data via data distribution
+[2025-09-20T11:25:34.711464700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.711210500Z][wsl-bootstrap][I] provisioning data via data distribution
+[2025-09-20T11:25:34.736176000Z][com.docker.backend.exe.socketforward][I] [2025-09-20T11:25:34.738737700Z][vpnkit-bridge][I] /run/guest-services/socketforwarder-receive-fds.sock: does not exist yet, waiting for it to be created
+[2025-09-20T11:25:34.820417700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.831007700Z][wsl-bootstrap.isocache][I] docker-wsl-cli.iso is present in the cache
+[2025-09-20T11:25:34.820417700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.831007700Z][wsl-bootstrap.isocache][I] docker-wsl-cli.iso is present in the cache
+[2025-09-20T11:25:34.942291400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.942099900Z][wsl-bootstrap.isocache][I] docker-desktop.iso is present in the cache
+[2025-09-20T11:25:34.942291400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.942099900Z][wsl-bootstrap.isocache][I] docker-desktop.iso is present in the cache
+[2025-09-20T11:25:34.962322100Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.961968000Z][wsl-bootstrap][I] no old version pack detected
+[2025-09-20T11:25:34.962322100Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.961968000Z][wsl-bootstrap][I] no old version pack detected
+[2025-09-20T11:25:34.966071000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.965801600Z][wsl-bootstrap][I] no traceparent to propagate
+[2025-09-20T11:25:34.966071000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.965801600Z][wsl-bootstrap][I] no traceparent to propagate
+[2025-09-20T11:25:34.966071000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.965920200Z][wsl-bootstrap][I] starting linuxkit container with unshare
+[2025-09-20T11:25:34.966071000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.966077300Z][wsl-bootstrap][I] Restoring existing exposed ports from the host
+[2025-09-20T11:25:34.966071000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.966157700Z][wsl-bootstrap.ipc][I] b983815b-wsl-bootstrap -> /run/host-services/backend.sock BackendAPI
+[2025-09-20T11:25:34.966071000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.965920200Z][wsl-bootstrap][I] starting linuxkit container with unshare
+[2025-09-20T11:25:34.966071000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.966077300Z][wsl-bootstrap][I] Restoring existing exposed ports from the host
+[2025-09-20T11:25:34.966071000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.966157700Z][wsl-bootstrap.ipc][I] b983815b-wsl-bootstrap -> /run/host-services/backend.sock BackendAPI
+[2025-09-20T11:25:34.966071000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.966209500Z][wsl-bootstrap.vpnkitcontrol][I] dialing Unix domain socket /run/guest-services/wsl2-expose-ports.sock for data connection
+[2025-09-20T11:25:34.966071000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.966209500Z][wsl-bootstrap.vpnkitcontrol][I] dialing Unix domain socket /run/guest-services/wsl2-expose-ports.sock for data connection
+[2025-09-20T11:25:34.966599200Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.966429100Z][wsl-bootstrap.vpnkitcontrol][I] unable to connect data on Unix domain socket /run/guest-services/wsl2-expose-ports.sock after 268.6µs: dial unix /run/guest-services/wsl2-expose-ports.sock: connect: no such file or directory. Is the server restarting? Will retry every 1s.
+[2025-09-20T11:25:34.966599200Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.966429100Z][wsl-bootstrap.vpnkitcontrol][I] unable to connect data on Unix domain socket /run/guest-services/wsl2-expose-ports.sock after 268.6µs: dial unix /run/guest-services/wsl2-expose-ports.sock: connect: no such file or directory. Is the server restarting? Will retry every 1s.
+[2025-09-20T11:25:34.967143300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.967489300Z][wsl-bootstrap][I] vpnkit forwarder server not ready yet: Get "http://unix/forwards/list": dial unix /run/host-services/backend.sock: connect: no such file or directory, retrying in 300ms
+[2025-09-20T11:25:34.968334600Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.967489300Z][wsl-bootstrap][I] vpnkit forwarder server not ready yet: Get "http://unix/forwards/list": dial unix /run/host-services/backend.sock: connect: no such file or directory, retrying in 300ms
+[2025-09-20T11:25:34.968334600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: GET failed with Get "http://unix/forwards/list": dial unix /run/host-services/backend.sock: connect: no such file or directory
+[2025-09-20T11:25:34.968334600Z][com.docker.backend.exe.logwriterwithscanner][I] GET failed with Get "http://unix/forwards/list": dial unix /run/host-services/backend.sock: connect: no such file or directory
+[2025-09-20T11:25:34.979817000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: Failed to fire hook: unable to create a log file for wsl-bootstrap in directory /root/.docker/desktop/log/host: creating /root/.docker/desktop/log/host: mkdir /root/.docker: read-only file system
+[2025-09-20T11:25:34.980344600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:34.979481500Z][wsl-bootstrap][I] execing /init
+[2025-09-20T11:25:34.980344600Z][com.docker.backend.exe.logwriterwithscanner][I] Failed to fire hook: unable to create a log file for wsl-bootstrap in directory /root/.docker/desktop/log/host: creating /root/.docker/desktop/log/host: mkdir /root/.docker: read-only file system
+[2025-09-20T11:25:34.980344600Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:34.979481500Z][wsl-bootstrap][I] execing /init
+[2025-09-20T11:25:35.112960600Z][com.docker.backend.exe.socketforward][I] [2025-09-20T11:25:35.126988700Z][vpnkit-bridge][I] /run/guest-services/socketforwarder-receive-fds.sock: successfully connected after 388.2388ms
+[2025-09-20T11:25:35.127493900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.126681800Z][init.socketforward][I] adding listener for virtual address: debug-socketforwarder
+[2025-09-20T11:25:35.127493900Z][com.docker.backend.exe.socketforward][I] [2025-09-20T11:25:35.127471700Z][vpnkit-bridge][I] sent fds so blocking forever
+[2025-09-20T11:25:35.127493900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.127173600Z][init.socketforward][I] adding listener for virtual address: perf-socketforwarder
+[2025-09-20T11:25:35.127493900Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.126681800Z][init.socketforward][I] adding listener for virtual address: debug-socketforwarder
+[2025-09-20T11:25:35.127493900Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.127173600Z][init.socketforward][I] adding listener for virtual address: perf-socketforwarder
+[2025-09-20T11:25:35.144241500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.145729000Z][init.socketforward][I] adding listener for virtual address: control-init
+[2025-09-20T11:25:35.146233300Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.145729000Z][init.socketforward][I] adding listener for virtual address: control-init
+[2025-09-20T11:25:35.146233300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.145934400Z][init.ipc][I] 130ec2e5-pause/unpause ->  
+[2025-09-20T11:25:35.146233300Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.145934400Z][init.ipc][I] 130ec2e5-pause/unpause ->  
+[2025-09-20T11:25:35.148345900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.148123500Z][init][I] platform has no virtio-net NICs
+[2025-09-20T11:25:35.148345900Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.148123500Z][init][I] platform has no virtio-net NICs
+[2025-09-20T11:25:35.148345900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.148234900Z][init][I] listening on TCP port 5555 for internal Docker Hub proxy
+[2025-09-20T11:25:35.148345900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.148278600Z][init][I] listening on TCP port 3128 for internal HTTP proxy
+[2025-09-20T11:25:35.148345900Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.148234900Z][init][I] listening on TCP port 5555 for internal Docker Hub proxy
+[2025-09-20T11:25:35.148345900Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.148278600Z][init][I] listening on TCP port 3128 for internal HTTP proxy
+[2025-09-20T11:25:35.148863900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.148975700Z][init.metadata][I] writing metadata to /run/config
+[2025-09-20T11:25:35.148863900Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.148975700Z][init.metadata][I] writing metadata to /run/config
+[2025-09-20T11:25:35.148863900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.149042000Z][init.ipc][I] bb74b644-metadata ->  
+[2025-09-20T11:25:35.148863900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.149134900Z][init][I] starting performance service
+[2025-09-20T11:25:35.148863900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.149138100Z][init][I] starting debug service
+[2025-09-20T11:25:35.149399800Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.149042000Z][init.ipc][I] bb74b644-metadata ->  
+[2025-09-20T11:25:35.149399800Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.149134900Z][init][I] starting performance service
+[2025-09-20T11:25:35.149399800Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.149138100Z][init][I] starting debug service
+[2025-09-20T11:25:35.150061300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.149138900Z][init.ipc][I] (8d83f51d) bb74b644-metadata C->S  GET /vm/init
+[2025-09-20T11:25:35.150262700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.149138900Z][init.ipc][I] (8d83f51d) bb74b644-metadata C->S  GET /vm/init
+[2025-09-20T11:25:35.152977800Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.149177700Z][init.ipc][I] run (with context) 20ab6baf-control for component init on control-init
+[2025-09-20T11:25:35.152977800Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.149177700Z][init.ipc][I] run (with context) 20ab6baf-control for component init on control-init
+[2025-09-20T11:25:35.155688500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.152804300Z][init.socketforward][I] receiving file descriptors on Unix domain socket
+[2025-09-20T11:25:35.155688500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.152804300Z][init.socketforward][I] receiving file descriptors on Unix domain socket
+[2025-09-20T11:25:35.155688500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.152264800Z][init.ipc][I] run (with context) 95426d5d-diagnosticsd for component diagnosticsd on /run/guest-services/diagnosticd.sock
+[2025-09-20T11:25:35.155688500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.152264800Z][init.ipc][I] run (with context) 95426d5d-diagnosticsd for component diagnosticsd on /run/guest-services/diagnosticd.sock
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.149713800Z][init.ipc][I] run (with context) 6791aed3-stats for component stats on /run/guest-services/stats.sock
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.149713800Z][init.ipc][I] run (with context) 6791aed3-stats for component stats on /run/guest-services/stats.sock
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.155956000Z][init.vpnkitcontrol][I] listening on Unix domain socket /run/guest-services/wsl2-expose-ports.sock for data connection
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.155866000Z][init.vpnkitcontrol][I] dialing Unix domain socket /run/host-services/vpnkit-data.sock for data connection
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.155956000Z][init.vpnkitcontrol][I] listening on Unix domain socket /run/guest-services/wsl2-expose-ports.sock for data connection
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.155866000Z][init.vpnkitcontrol][I] dialing Unix domain socket /run/host-services/vpnkit-data.sock for data connection
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.156303800Z][init.vpnkitcontrol][I] unable to connect data on Unix domain socket /run/host-services/vpnkit-data.sock after 442.5µs: dial unix /run/host-services/vpnkit-data.sock: connect: no such file or directory. Is the server restarting? Will retry every 1s.
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.149808300Z][init][I] cgroupv1 detected in /sys/fs/cgroup/freezer
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.156303800Z][init.vpnkitcontrol][I] unable to connect data on Unix domain socket /run/host-services/vpnkit-data.sock after 442.5µs: dial unix /run/host-services/vpnkit-data.sock: connect: no such file or directory. Is the server restarting? Will retry every 1s.
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.156160300Z][init.ipc][I] run (with context) db8aad13-volume-contents for component volume-contents on /run/guest-services/volume-contents.sock
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.149808300Z][init][I] cgroupv1 detected in /sys/fs/cgroup/freezer
+[2025-09-20T11:25:35.156229700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.156160300Z][init.ipc][I] run (with context) db8aad13-volume-contents for component volume-contents on /run/guest-services/volume-contents.sock
+[2025-09-20T11:25:35.156784300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.156619400Z][init.ipc][I] run (with context) ad0113a5-procd for component procd on /run/guest-services/procd.sock
+[2025-09-20T11:25:35.156784300Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.156619400Z][init.ipc][I] run (with context) ad0113a5-procd for component procd on /run/guest-services/procd.sock
+[2025-09-20T11:25:35.158417400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.157596800Z][init.ipc][I] run (with context) bce5fa60-container-filesystem for component container-filesystem on /run/guest-services/container-filesystem.sock
+[2025-09-20T11:25:35.158417400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.157596800Z][init.ipc][I] run (with context) bce5fa60-container-filesystem for component container-filesystem on /run/guest-services/container-filesystem.sock
+[2025-09-20T11:25:35.159007800Z][com.docker.backend.exe.socketforward][I] starting to forward dials
+[2025-09-20T11:25:35.160794600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.156609200Z][init][I] QEMU arm registered
+[2025-09-20T11:25:35.160794600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.158012700Z][init][I] QEMU mips64 registered
+[2025-09-20T11:25:35.160794600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.158075500Z][init.socketforward][I] starting to forward dials
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.158192900Z][init.socketforward][I] engine: dns.internal/grpc: publishing locally on /run/host-services/dns.internal.grpc.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160476300Z][init.socketforward][I] engine: extensions: publishing locally on /run/host-services/extension-manager.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.158737200Z][init.socketforward][I] engine: vpnkit: publishing locally on /run/host-services/vpnkit.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160633600Z][init.socketforward][I] engine: network-proxy: publishing locally on /run/host-services/network-proxy.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160678500Z][init.socketforward][I] engine: http-proxy: publishing locally on /run/host-services/http-proxy.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160701800Z][init.socketforward][I] engine: osxfs-data: publishing locally on /run/host-services/osxfs-data.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160732400Z][init.socketforward][I] engine: http-proxy-restricted: publishing locally on /run/host-services/http-proxy-restricted.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160709800Z][init.socketforward][I] engine: backend: publishing locally on /run/host-services/backend.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160787000Z][init.socketforward][I] engine: otel-system-telemetry: publishing locally on /run/host-services/system-telemetry.otlp.grpc.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160756100Z][init.socketforward][I] engine: gvisor: publishing locally on /run/host-services/gvisor-ethernet-vpnkit-protocol.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160830500Z][init.socketforward][I] engine: backend-native: publishing locally on /run/host-services/backend.native.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.156609200Z][init][I] QEMU arm registered
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.158012700Z][init][I] QEMU mips64 registered
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.158075500Z][init.socketforward][I] starting to forward dials
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.158192900Z][init.socketforward][I] engine: dns.internal/grpc: publishing locally on /run/host-services/dns.internal.grpc.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160476300Z][init.socketforward][I] engine: extensions: publishing locally on /run/host-services/extension-manager.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.158737200Z][init.socketforward][I] engine: vpnkit: publishing locally on /run/host-services/vpnkit.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160633600Z][init.socketforward][I] engine: network-proxy: publishing locally on /run/host-services/network-proxy.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160678500Z][init.socketforward][I] engine: http-proxy: publishing locally on /run/host-services/http-proxy.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160701800Z][init.socketforward][I] engine: osxfs-data: publishing locally on /run/host-services/osxfs-data.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160732400Z][init.socketforward][I] engine: http-proxy-restricted: publishing locally on /run/host-services/http-proxy-restricted.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160709800Z][init.socketforward][I] engine: backend: publishing locally on /run/host-services/backend.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160787000Z][init.socketforward][I] engine: otel-system-telemetry: publishing locally on /run/host-services/system-telemetry.otlp.grpc.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.ntp][I] NTP: accepted connection
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160756100Z][init.socketforward][I] engine: gvisor: publishing locally on /run/host-services/gvisor-ethernet-vpnkit-protocol.sock
+[2025-09-20T11:25:35.161301000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160830500Z][init.socketforward][I] engine: backend-native: publishing locally on /run/host-services/backend.native.sock
+[2025-09-20T11:25:35.161842600Z][com.docker.backend.exe.gvisor][I] configuring gvisor with mtu = 1500
+[2025-09-20T11:25:35.162379300Z][com.docker.backend.exe.ipc][I] (8d83f51d) 1223629d-BackendAPI S<-C bb74b644-metadata GET /vm/init
+[2025-09-20T11:25:35.162927300Z][com.docker.backend.exe.ipc][I] (41c9e258) 1223629d-BackendAPI S<-C Go-http-client/1.1 GET /resource/services.raw.sha256
+[2025-09-20T11:25:35.161842600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.158198200Z][init.socketforward][I] engine: dns.system/grpc: publishing locally on /run/host-services/dns.system.grpc.sock
+[2025-09-20T11:25:35.162927300Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.158198200Z][init.socketforward][I] engine: dns.system/grpc: publishing locally on /run/host-services/dns.system.grpc.sock
+[2025-09-20T11:25:35.162927300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.158034500Z][init][I] disk is ready
+[2025-09-20T11:25:35.162927300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160687700Z][init.socketforward][I] engine: vpnkit-data: publishing locally on /run/host-services/vpnkit-data.sock
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.158125500Z][init][I] QEMU mips64le registered
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.162566100Z][init][I] QEMU ppc64le registered
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160695300Z][init.socketforward][I] engine: hubproxy: publishing locally on /run/host-services/hubproxy.sock
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.162662700Z][init][I] QEMU riscv64 registered
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160757900Z][init.socketforward][I] engine: docker-proxy: publishing locally on /run/host-services/docker.proxy.sock
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.158034500Z][init][I] disk is ready
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160687700Z][init.socketforward][I] engine: vpnkit-data: publishing locally on /run/host-services/vpnkit-data.sock
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.158125500Z][init][I] QEMU mips64le registered
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.162566100Z][init][I] QEMU ppc64le registered
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160695300Z][init.socketforward][I] engine: hubproxy: publishing locally on /run/host-services/hubproxy.sock
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.162662700Z][init][I] QEMU riscv64 registered
+[2025-09-20T11:25:35.163466500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160757900Z][init.socketforward][I] engine: docker-proxy: publishing locally on /run/host-services/docker.proxy.sock
+[2025-09-20T11:25:35.174522600Z][com.docker.backend.exe.gvisor/virtualnetwork][I] adding route 192.168.65.3/32 via 192.168.65.3
+[2025-09-20T11:25:35.174522600Z][com.docker.backend.exe.gvisor/virtualnetwork][I] adding route 192.168.65.7/32 via 192.168.65.3
+[2025-09-20T11:25:35.184715300Z][com.docker.backend.exe.ipc][I] (8d83f51d) 1223629d-BackendAPI S->C bb74b644-metadata GET /vm/init (22.336ms)
+[2025-09-20T11:25:35.210043600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.162392800Z][init][I] NTP: set time delta 771.601µs, rtt 2.580701ms
+[2025-09-20T11:25:35.210043600Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.162392800Z][init][I] NTP: set time delta 771.601µs, rtt 2.580701ms
+[2025-09-20T11:25:35.210043600Z][com.docker.backend.exe.ipc][I] 586d819e-PauseHDL /pause/events <-- [2025-09-20T16:55:35.163243400+05:30] (f1871474) ipc ready : <nil>
+[2025-09-20T11:25:35.210043600Z][com.docker.backend.exe.gvisor/tap][I] new connection from to gvisor to from gvisor
+[2025-09-20T11:25:35.210043600Z][com.docker.backend.exe.procd][I] received state {IsPaused:false PauseText: PauseError: DockerAPI:running Docker:starting Idle:running State:starting Mode:linux SessionID:32ba47e4-63f2-485f-a185-c24d24282aca}
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.160722200Z][init.socketforward][I] engine: filesystem: publishing locally on /run/host-services/filesystem.sock
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.160722200Z][init.socketforward][I] engine: filesystem: publishing locally on /run/host-services/filesystem.sock
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.208242700Z][init.dns][I] eBPF loaded
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.207706600Z][init][I] QEMU s390x registered
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.208242700Z][init.dns][I] eBPF loaded
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.207706600Z][init][I] QEMU s390x registered
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.210300800Z][init.dns][I] pinned IP allowlist map to /sys/fs/bpf/allowed_map
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.210420400Z][init.dns][I] pinned IP blocked_packets map to /sys/fs/bpf/blocked_packets
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.210350500Z][init][I] QEMU aarch64 registered
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.210300800Z][init.dns][I] pinned IP allowlist map to /sys/fs/bpf/allowed_map
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.210420400Z][init.dns][I] pinned IP blocked_packets map to /sys/fs/bpf/blocked_packets
+[2025-09-20T11:25:35.211114100Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.210350500Z][init][I] QEMU aarch64 registered
+[2025-09-20T11:25:35.212174000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.210450600Z][init.dns][I] pinned IP allowlist trie to /sys/fs/bpf/allowed_trie
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.210450600Z][init.dns][I] pinned IP allowlist trie to /sys/fs/bpf/allowed_trie
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.211758300Z][init][I] connected vsock with mtu = 1500 and MAC = f6:b7:ed:e3:5f:56
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.211783900Z][init.dns][I] detected mixed-mode v1/v2 cgroups, with v2 on /sys/fs/cgroup/unified.
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.211758300Z][init][I] connected vsock with mtu = 1500 and MAC = f6:b7:ed:e3:5f:56
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.211783900Z][init.dns][I] detected mixed-mode v1/v2 cgroups, with v2 on /sys/fs/cgroup/unified.
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.211788500Z][init.ipc][I] (8d83f51d) bb74b644-metadata C<-S 1223629d-BackendAPI GET /vm/init (62.3969ms)
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.211933400Z][init.dns][I] applying policy to /sys/fs/cgroup/unified/restricted
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.ipc][I] (79ad3b86) 1223629d-BackendAPI S->C 6ff5fec0-desktop_extensions GET /forwards/list (9.3008696s): []
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.211788500Z][init.ipc][I] (8d83f51d) bb74b644-metadata C<-S 1223629d-BackendAPI GET /vm/init (62.3969ms)
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212006000Z][init.dns][I] created /sys/fs/cgroup/unified/restricted
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.211933400Z][init.dns][I] applying policy to /sys/fs/cgroup/unified/restricted
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212115200Z][init][I] eth0: adding IP 192.168.65.3/24
+[2025-09-20T11:25:35.212697300Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212006000Z][init.dns][I] created /sys/fs/cgroup/unified/restricted
+[2025-09-20T11:25:35.213226200Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212352400Z][init][I] eth0 is up
+[2025-09-20T11:25:35.213226200Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212115200Z][init][I] eth0: adding IP 192.168.65.3/24
+[2025-09-20T11:25:35.213226200Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212460800Z][init.dns][I] attached eBPF to egress of cgroup /sys/fs/cgroup/unified/restricted
+[2025-09-20T11:25:35.213226200Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212352400Z][init][I] eth0 is up
+[2025-09-20T11:25:35.213226200Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212539200Z][init.dns][I] pinned link to /sys/fs/bpf/link/restricted
+[2025-09-20T11:25:35.213226200Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212460800Z][init.dns][I] attached eBPF to egress of cgroup /sys/fs/cgroup/unified/restricted
+[2025-09-20T11:25:35.213226200Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212582600Z][init.dns][I] detected mixed-mode v1/v2 cgroups, with v2 on /sys/fs/cgroup/unified.
+[2025-09-20T11:25:35.213226200Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212539200Z][init.dns][I] pinned link to /sys/fs/bpf/link/restricted
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212582600Z][init.dns][I] detected mixed-mode v1/v2 cgroups, with v2 on /sys/fs/cgroup/unified.
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212687300Z][init.dns][I] applying policy to /sys/fs/cgroup/unified/docker/buildx
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212687300Z][init.dns][I] applying policy to /sys/fs/cgroup/unified/docker/buildx
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212817100Z][init.dns][I] created /sys/fs/cgroup/unified/docker/buildx
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212820100Z][init.socks][I] server is disabled
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212892500Z][init.dns][I] attached eBPF to egress of cgroup /sys/fs/cgroup/unified/docker/buildx
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212857900Z][init][I] metadata is ready
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212817100Z][init.dns][I] created /sys/fs/cgroup/unified/docker/buildx
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212820100Z][init.socks][I] server is disabled
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212892500Z][init.dns][I] attached eBPF to egress of cgroup /sys/fs/cgroup/unified/docker/buildx
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212857900Z][init][I] metadata is ready
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.212866900Z][init][I] Host networking will not be started because it is disabled
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.213021100Z][init.dns][I] pinned link to /sys/fs/bpf/link/buildx
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.212866900Z][init][I] Host networking will not be started because it is disabled
+[2025-09-20T11:25:35.213841400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.213021100Z][init.dns][I] pinned link to /sys/fs/bpf/link/buildx
+[2025-09-20T11:25:35.215046400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.214333200Z][init.fs][I] starting FUSE client
+[2025-09-20T11:25:35.215046400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.214408200Z][init.ipc][I] 6b60ae11-dns-forwarder ->  
+[2025-09-20T11:25:35.215046400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.214333200Z][init.fs][I] starting FUSE client
+[2025-09-20T11:25:35.215556700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.214408200Z][init.ipc][I] 6b60ae11-dns-forwarder ->  
+[2025-09-20T11:25:35.215556700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.214501900Z][init.ipc][I] (895562f5) 6b60ae11-dns-forwarder C->S  GET /registry/access
+[2025-09-20T11:25:35.215556700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.214501900Z][init.ipc][I] (895562f5) 6b60ae11-dns-forwarder C->S  GET /registry/access
+[2025-09-20T11:25:35.215556700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.214510400Z][init.fs][I] listening for mount requests on unix:/run/grpcfuse.mount.sock
+[2025-09-20T11:25:35.215556700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.214510400Z][init.fs][I] listening for mount requests on unix:/run/grpcfuse.mount.sock
+[2025-09-20T11:25:35.215556700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.214855200Z][init.fs][I] FUSE server disabled
+[2025-09-20T11:25:35.215556700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.214855200Z][init.fs][I] FUSE server disabled
+[2025-09-20T11:25:35.215556700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.214947900Z][init.fs][I] filesharing mode is: wsl2builtin
+[2025-09-20T11:25:35.215556700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.214947900Z][init.fs][I] filesharing mode is: wsl2builtin
+[2025-09-20T11:25:35.215556700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.215028100Z][init][I] fs is ready
+[2025-09-20T11:25:35.215556700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.215028100Z][init][I] fs is ready
+[2025-09-20T11:25:35.216253200Z][com.docker.backend.exe.ipc][I] (895562f5) 1223629d-BackendAPI S<-C 6b60ae11-dns-forwarder GET /registry/access
+[2025-09-20T11:25:35.217463600Z][com.docker.backend.exe.ipc][I] (895562f5) 1223629d-BackendAPI S->C 6b60ae11-dns-forwarder GET /registry/access (1.2104ms)
+[2025-09-20T11:25:35.219168800Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.218247000Z][init.ipc][I] (895562f5) 6b60ae11-dns-forwarder C<-S 1223629d-BackendAPI GET /registry/access (3.7482ms)
+[2025-09-20T11:25:35.219168800Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.218247000Z][init.ipc][I] (895562f5) 6b60ae11-dns-forwarder C<-S 1223629d-BackendAPI GET /registry/access (3.7482ms)
+[2025-09-20T11:25:35.219168800Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.218566300Z][init.socketforward][I] adding listener for virtual address: /run/guest-services/dns-forwarder.sock
+[2025-09-20T11:25:35.219168800Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.218566300Z][init.socketforward][I] adding listener for virtual address: /run/guest-services/dns-forwarder.sock
+[2025-09-20T11:25:35.219704100Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.218880100Z][init.ipc][I] run (with context) bb5c85b5-dns-forwarder for component dns-forwarder on /run/guest-services/dns-forwarder.sock
+[2025-09-20T11:25:35.219704100Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.218880100Z][init.ipc][I] run (with context) bb5c85b5-dns-forwarder for component dns-forwarder on /run/guest-services/dns-forwarder.sock
+[2025-09-20T11:25:35.267877600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.267037900Z][wsl-bootstrap.ipc][I] 17a391bd-wsl-bootstrap -> /run/host-services/backend.sock BackendAPI
+[2025-09-20T11:25:35.267877600Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.267037900Z][wsl-bootstrap.ipc][I] 17a391bd-wsl-bootstrap -> /run/host-services/backend.sock BackendAPI
+[2025-09-20T11:25:35.269446500Z][com.docker.backend.exe.ipc][I] (e99ced39) 1223629d-BackendAPI S<-C Go-http-client/1.1 GET /forwards/list
+[2025-09-20T11:25:35.270516900Z][com.docker.backend.exe.ipc][I] (e99ced39) 1223629d-BackendAPI S->C Go-http-client/1.1 GET /forwards/list (1.0704ms): []
+[2025-09-20T11:25:35.271042500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.270252900Z][wsl-bootstrap][I] wsl-bootstrap: starting cross-distro routing service
+[2025-09-20T11:25:35.271042500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.270252900Z][wsl-bootstrap][I] wsl-bootstrap: starting cross-distro routing service
+[2025-09-20T11:25:35.271042500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.270344400Z][wsl-bootstrap.ipc][I] run (with context) 15b79c79-cross-distro for component router on /run/guest-services/wsl-cross-distro.sock
+[2025-09-20T11:25:35.271042500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.270344400Z][wsl-bootstrap.ipc][I] run (with context) 15b79c79-cross-distro for component router on /run/guest-services/wsl-cross-distro.sock
+[2025-09-20T11:25:35.288402400Z][com.docker.backend.exe.ipc][I] (41c9e258) 1223629d-BackendAPI S->C Go-http-client/1.1 GET /resource/services.raw.sha256 (125.4751ms): FILE "C:\Program Files\Docker\Docker\resources\services.raw.sha256"
+[2025-09-20T11:25:35.289543800Z][com.docker.backend.exe.ipc][I] (3cc0f820) 1223629d-BackendAPI S<-C Go-http-client/1.1 HEAD /resource/services.raw
+[2025-09-20T11:25:35.310849400Z][com.docker.backend.exe.ipc][I] (3cc0f820) 1223629d-BackendAPI S->C Go-http-client/1.1 HEAD /resource/services.raw (21.3056ms): FILE "C:\Program Files\Docker\Docker\resources\services.raw"
+[2025-09-20T11:25:35.311355800Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.311231400Z][init.isocache][I] services.raw is present in the cache
+[2025-09-20T11:25:35.311355800Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.311231400Z][init.isocache][I] services.raw is present in the cache
+[2025-09-20T11:25:35.344149400Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.343212900Z][init][I] services unpacked and bind-mounted on /containers/services
+[2025-09-20T11:25:35.344149400Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.343212900Z][init][I] services unpacked and bind-mounted on /containers/services
+[2025-09-20T11:25:35.345163200Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.344221100Z][init][I] installed service: 01-docker
+[2025-09-20T11:25:35.345163200Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.344256400Z][init][I] installed service: devenv
+[2025-09-20T11:25:35.345163200Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.344221100Z][init][I] installed service: 01-docker
+[2025-09-20T11:25:35.345163200Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.344256400Z][init][I] installed service: devenv
+[2025-09-20T11:25:35.345163200Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.344423600Z][init][I] services is ready
+[2025-09-20T11:25:35.345163200Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.344423600Z][init][I] services is ready
+[2025-09-20T11:25:35.350372900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.349184900Z][init.containers][I] Started devenv in 4.7682ms
+[2025-09-20T11:25:35.350372900Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.349184900Z][init.containers][I] Started devenv in 4.7682ms
+[2025-09-20T11:25:35.355192600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.354221800Z][init.ipc][I] d1ac2afc-oom-tracer -> /run/host-services/backend.sock BackendAPI
+[2025-09-20T11:25:35.355192600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.354296000Z][init.oom-tracer][I] oom-tracer started
+[2025-09-20T11:25:35.355192600Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.354221800Z][init.ipc][I] d1ac2afc-oom-tracer -> /run/host-services/backend.sock BackendAPI
+[2025-09-20T11:25:35.355192600Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.354296000Z][init.oom-tracer][I] oom-tracer started
+[2025-09-20T11:25:35.355710500Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.355057900Z][init.containers][I] Started 01-docker in 9.4517ms
+[2025-09-20T11:25:35.355710500Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.355057900Z][init.containers][I] Started 01-docker in 9.4517ms
+[2025-09-20T11:25:35.534890100Z][com.docker.backend.exe.segment][I] flushing 1 messages
+[2025-09-20T11:25:35.694779900Z][com.docker.backend.exe.ipc][I] (35292f24) 1223629d-BackendAPI S<-C 85ddbad6-lifecycle-server POST /events
+[2025-09-20T11:25:35.694779900Z][com.docker.backend.exe.ipc][I] (35292f24) 1223629d-BackendAPI S<-C 85ddbad6-lifecycle-server bind: {"HasServerTimestamp":false,"content":"starting dockerd","docker":"starting","source":"85ddbad6-lifecycle-server","timestamp":1758367535685022500}
+[2025-09-20T11:25:35.694779900Z][com.docker.backend.exe.state][I] backend state changed to starting (starting dockerd)
+[2025-09-20T11:25:35.694779900Z][com.docker.backend.exe.statehandler][I] sending to Dashboard: starting
+[2025-09-20T11:25:35.694779900Z][com.docker.backend.exe.ipcstream][I] 1223629d-BackendAPI /engine/state --> [2025-09-20T16:55:35.685022500+05:30] (f78bdf7b) engine starting : starting dockerd
+[2025-09-20T11:25:35.695336900Z][com.docker.backend.exe.ipc][I] (35292f24) 1223629d-BackendAPI S->C 85ddbad6-lifecycle-server POST /events (557µs): {"HasServerTimestamp":false,"content":"starting dockerd","docker":"starting","source":"85ddbad6-lifecycle-server","timestamp":1758367535685022500}
+[2025-09-20T11:25:35.698347400Z][com.docker.backend.exe.ipc][I] (528d7916) 1223629d-BackendAPI S<-C 85ddbad6-lifecycle-server GET /settings
+[2025-09-20T11:25:35.698347400Z][com.docker.backend.exe.ipc][I] (528d7916) 1223629d-BackendAPI S->C 85ddbad6-lifecycle-server GET /settings (0s)
+[2025-09-20T11:25:35.702869800Z][com.docker.backend.exe.ipc][I] (577149d1) 1223629d-BackendAPI S<-C 85ddbad6-lifecycle-server GET /engine/daemon.json
+[2025-09-20T11:25:35.702869800Z][com.docker.backend.exe.ipc][I] (869465a4) 1223629d-BackendAPI S<-C 85ddbad6-lifecycle-server GET /engine/http_proxy
+[2025-09-20T11:25:35.702869800Z][com.docker.backend.exe.ipc][I] (33931d75) 1223629d-BackendAPI S<-C b728cee0-proxy-restrictions GET /enforcement
+[2025-09-20T11:25:35.702869800Z][com.docker.backend.exe.ipc][I] (7751b9dc) 1223629d-BackendAPI S<-C 85ddbad6-lifecycle-server GET /vm/certs
+[2025-09-20T11:25:35.702869800Z][com.docker.backend.exe.ipc][I] (33931d75) 1223629d-BackendAPI S->C b728cee0-proxy-restrictions GET /enforcement (0s): {"enforcement":false}
+[2025-09-20T11:25:35.702869800Z][com.docker.backend.exe.ipc][I] (869465a4) 1223629d-BackendAPI S->C 85ddbad6-lifecycle-server GET /engine/http_proxy (0s): {"Exclude":"hubproxy.docker.internal","HTTP":"h...8","HTTPS":"h...8"}
+[2025-09-20T11:25:35.703464300Z][com.docker.backend.exe.daemonconfigloader][I] get daemon config: {"builder":{"gc":{"defaultKeepStorage":"20GB","enabled":true}},"experimental":false}
+[2025-09-20T11:25:35.703464300Z][com.docker.backend.exe.ipc][I] (577149d1) 1223629d-BackendAPI S->C 85ddbad6-lifecycle-server GET /engine/daemon.json (594.5µs): {"builder":{"gc":{"defaultKeepStorage":"20GB","enabled":true}},"experimental":false}
+[2025-09-20T11:25:35.736661300Z][com.docker.backend.exe.gvisor/forwarder][I] 192.168.65.1:3128 <- 192.168.65.3:57916: dialing 192.168.65.1:3128
+[2025-09-20T11:25:35.736661300Z][com.docker.backend.exe.gvisor/forwarder][I] 192.168.65.1:3128 <- 192.168.65.3:57914: dialing 192.168.65.1:3128
+[2025-09-20T11:25:35.736661300Z][com.docker.backend.exe.gvisor/forwarder][I] 192.168.65.1:3128 <- 192.168.65.3:57916: dial succeeded (1 in-progress TCP connections)
+[2025-09-20T11:25:35.737178200Z][com.docker.backend.exe.gvisor/forwarder][I] 192.168.65.1:3128 <- 192.168.65.3:57914: dial succeeded (2 in-progress TCP connections)
+[2025-09-20T11:25:35.746457800Z][com.docker.backend.exe.gvisor/forwarder][I] 192.168.65.1:3128 <- 192.168.65.3:57916: close with 163 bytes transferred (1 remaining in-progress TCP connections)
+[2025-09-20T11:25:35.746457800Z][com.docker.backend.exe.gvisor/forwarder][I] 192.168.65.1:3128 <- 192.168.65.3:57914: close with 163 bytes transferred (0 remaining in-progress TCP connections)
+[2025-09-20T11:25:35.810364600Z][com.docker.backend.exe.segment][I] response 200 OK
+[2025-09-20T11:25:35.826522900Z][com.docker.backend.exe.enginedependencies][I] looking for registries certs in <HOME>\.docker\certs.d
+[2025-09-20T11:25:35.835810700Z][com.docker.backend.exe.ipc][I] (7751b9dc) 1223629d-BackendAPI S->C 85ddbad6-lifecycle-server GET /vm/certs (127.3944ms): {"Authorities":"-...\n","Client":{}}
+[2025-09-20T11:25:35.967850600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.966202100Z][wsl-bootstrap.vpnkitcontrol][I] connected data connection on Unix domain socket /run/guest-services/wsl2-expose-ports.sock after 1.0008116s
+[2025-09-20T11:25:35.967850600Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.966202100Z][wsl-bootstrap.vpnkitcontrol][I] connected data connection on Unix domain socket /run/guest-services/wsl2-expose-ports.sock after 1.0008116s
+[2025-09-20T11:25:35.967850600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.966341500Z][init.vpnkitcontrol][I] accepted data connection on Unix domain socket /run/guest-services/wsl2-expose-ports.sock
+[2025-09-20T11:25:35.967850600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.966769400Z][init.vpnkitcontrol][I] established connection to vpnkit-forwarder
+[2025-09-20T11:25:35.967850600Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:35.966811700Z][wsl-bootstrap.vpnkitcontrol][I] established connection to vpnkit-forwarder
+[2025-09-20T11:25:35.967850600Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.966341500Z][init.vpnkitcontrol][I] accepted data connection on Unix domain socket /run/guest-services/wsl2-expose-ports.sock
+[2025-09-20T11:25:35.967850600Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.966769400Z][init.vpnkitcontrol][I] established connection to vpnkit-forwarder
+[2025-09-20T11:25:35.967850600Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:35.966811700Z][wsl-bootstrap.vpnkitcontrol][I] established connection to vpnkit-forwarder
+[2025-09-20T11:25:36.145465900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:36.156267200Z][init.vpnkitcontrol][I] connected data connection on Unix domain socket /run/host-services/vpnkit-data.sock after 1.0011708s
+[2025-09-20T11:25:36.157637000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:36.156267200Z][init.vpnkitcontrol][I] connected data connection on Unix domain socket /run/host-services/vpnkit-data.sock after 1.0011708s
+[2025-09-20T11:25:36.157637000Z][com.docker.backend.exe.vpnkitcontrol][I] accepted data connection on vpnkit-data
+[2025-09-20T11:25:36.158146700Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:36.157661800Z][init.vpnkitcontrol][I] established connection to vpnkit-forwarder
+[2025-09-20T11:25:36.158146700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:36.157661800Z][init.vpnkitcontrol][I] established connection to vpnkit-forwarder
+[2025-09-20T11:25:36.158676400Z][com.docker.backend.exe.vpnkitcontrol][I] established connection to vpnkit-forwarder
+[2025-09-20T11:25:36.885554000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:36.884577100Z][init.trim][I] (Re-)connected to the Docker daemon
+[2025-09-20T11:25:36.885554000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:36.884577100Z][init.trim][I] (Re-)connected to the Docker daemon
+[2025-09-20T11:25:36.886700000Z][com.docker.backend.exe.engines][I] waitForDockerApiToBeReady: Docker API is ready
+[2025-09-20T11:25:36.886700000Z][com.docker.backend.exe.events][I] adding server timestamp to event (engines): 1758367536886700000 docker: running
+[2025-09-20T11:25:36.886700000Z][com.docker.backend.exe.state][I] backend state changed to running
+[2025-09-20T11:25:36.886700000Z][com.docker.backend.exe.idle][I] initial boot complete
+[2025-09-20T11:25:36.887250500Z][com.docker.backend.exe.ipcstream][I] 1223629d-BackendAPI /engine/state --> [2025-09-20T16:55:36.886700000+05:30] (e1c7f23a) engine running : 
+[2025-09-20T11:25:36.887250500Z][com.docker.backend.exe.state][I] sending desktop state:EngineRunningState
+[2025-09-20T11:25:36.887250500Z][com.docker.backend.exe.statehandler][I] sending to Dashboard: running
+[2025-09-20T11:25:36.887250500Z][com.docker.backend.exe.analytics][I] sending startup events
+[2025-09-20T11:25:36.889958400Z][com.docker.backend.exe.kubernetes][I] cluster is disabled by config - not starting
+[2025-09-20T11:25:36.890529300Z][com.docker.backend.exe.ipc][I] (3e0c9eb1) 1223629d-BackendAPI S<-C 85ddbad6-lifecycle-server POST /events
+[2025-09-20T11:25:36.891036000Z][com.docker.backend.exe.ipc][I] (3e0c9eb1) 1223629d-BackendAPI S<-C 85ddbad6-lifecycle-server bind: {"HasServerTimestamp":false,"content":"dockerd is running","docker":"running","source":"85ddbad6-lifecycle-server","timestamp":1758367536886081500}
+[2025-09-20T11:25:36.891036000Z][com.docker.backend.exe.events][I] dropping earlier event: 1758367536886081500 (from server) docker: running (dockerd is running)  (earlier than 1758367536886700000 docker: running)
+[2025-09-20T11:25:36.891036000Z][com.docker.backend.exe.kubernetes][I] cluster is disabled by config - not starting
+[2025-09-20T11:25:36.891036000Z][com.docker.backend.exe.statehandler][I] sending to Dashboard: running
+[2025-09-20T11:25:36.891036000Z][com.docker.backend.exe.ipcstream][I] 1223629d-BackendAPI /engine/state --> [2025-09-20T16:55:36.886081500+05:30] (4b94d9d6) engine running : dockerd is running
+[2025-09-20T11:25:36.893831500Z][com.docker.backend.exe.enginedependencies][I] starting forwarding dials
+[2025-09-20T11:25:36.893831500Z][com.docker.backend.exe.state][I] backend state changed to running (dockerd is running)
+[2025-09-20T11:25:36.894344800Z][com.docker.backend.exe.engines][I] engine linux is running
+[2025-09-20T11:25:36.893831500Z][com.docker.backend.exe.tracker][I] sending event: desktopState
+[2025-09-20T11:25:36.894344800Z][com.docker.backend.exe.ipc][I] (3e0c9eb1) 1223629d-BackendAPI S->C 85ddbad6-lifecycle-server POST /events (3.8155ms): {"HasServerTimestamp":false,"content":"dockerd is running","docker":"running","source":"85ddbad6-lifecycle-server","timestamp":1758367536886081500}
+[2025-09-20T11:25:36.895440100Z][com.docker.backend.exe.ipc][I] (51a6ecae) 83a41c5a-RootlessManager C->S com.docker.service GET /ping
+[2025-09-20T11:25:36.895520800Z][com.docker.backend.exe.tracker][I] sending event: eventBackendStarted
+[2025-09-20T11:25:36.897280900Z][com.docker.backend.exe.ipc][I] (b691c351) 04847bca-volume-contents C->S DockerVolumeServer GET /ping
+[2025-09-20T11:25:36.898358400Z][com.docker.backend.exe.ipc][I] (9d0e3f88) b290773e-devenvs-heartbeat C->S DevEnvsServer GET /ping
+[2025-09-20T11:25:36.898358400Z][com.docker.backend.exe.ipc][W] (51a6ecae) 83a41c5a-RootlessManager C<-S NoResponse GET /ping (2.9183ms): Get "http://ipc/ping": open \\.\pipe\dockerBackendV2: The system cannot find the file specified.
+[2025-09-20T11:25:36.898358400Z][com.docker.backend.exe.rootless][I] windows service did not respond to a ping, the service may not be started Get "http://ipc/ping": open \\.\pipe\dockerBackendV2: The system cannot find the file specified.
+[2025-09-20T11:25:36.901926800Z][com.docker.backend.exe.apiproxy][I] >> HEAD /_ping
+[2025-09-20T11:25:36.901993000Z][com.docker.backend.exe.heartbeat][I] analyticsHandler data added: <none>
+[2025-09-20T11:25:36.902506100Z][com.docker.backend.exe.heartbeat][I] settings data added: ExtensionsEnabled, AutoPauseTimeoutSeconds, AutomaticUpdates, DiskSizeMiB, LicenseTermsVersion, NetworkType, ShowAnnouncementNotifications, ShowGeneralNotifications, ShowPromotionalNotifications, ShowSurveyNotifications, TotalDiskSize, UseGrpcfuse, UsePrivilegedComponent, UseResourceSaver, UseVpnkit, UsingCloudCLI, VmCPUs, VmMemoryMiB, VmSwapMiB
+[2025-09-20T11:25:36.903257300Z][com.docker.backend.exe.heartbeat][I] datacache data added: AppRunningSince, DockerStartupTime, TotalAppStartupTime
+[2025-09-20T11:25:36.903773900Z][com.docker.backend.exe.heartbeat][I] bugsnag data added: ReportCacheSize
+[2025-09-20T11:25:36.905082100Z][com.docker.backend.exe.heartbeat][I] installsettings data added: <none>
+[2025-09-20T11:25:36.905560900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:36.903343500Z][init.ipc][I] (b691c351) db8aad13-volume-contents S<-C 04847bca-volume-contents GET /ping
+[2025-09-20T11:25:36.905560900Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:36.903495700Z][init.ipc][I] (b691c351) db8aad13-volume-contents S->C 04847bca-volume-contents GET /ping (129.7µs): {"serverTime":1758367536903425500}
+[2025-09-20T11:25:36.905560900Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:36.903343500Z][init.ipc][I] (b691c351) db8aad13-volume-contents S<-C 04847bca-volume-contents GET /ping
+[2025-09-20T11:25:36.905560900Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:36.903495700Z][init.ipc][I] (b691c351) db8aad13-volume-contents S->C 04847bca-volume-contents GET /ping (129.7µs): {"serverTime":1758367536903425500}
+[2025-09-20T11:25:36.906568400Z][com.docker.backend.exe.heartbeat][I] registry data added: UserPlan
+[2025-09-20T11:25:36.907185900Z][com.docker.backend.exe.apiproxy][I] >> GET /events?filters=%7B%22event%22%3A%5B%22load%22%2C%22pull%22%2C%22tag%22%2C%22import%22%5D%7D
+[2025-09-20T11:25:36.907185900Z][com.docker.backend.exe.heartbeat][I] adminsettings data added: AdminSettingsKeys
+[2025-09-20T11:25:36.910043900Z][com.docker.backend.exe.ipc][I] (b691c351) 04847bca-volume-contents C<-S db8aad13-volume-contents GET /ping (12.763ms): {"serverTime":1758367536903425500}
+[2025-09-20T11:25:36.910043900Z][com.docker.backend.exe.ipc][I] (b1503c8f) 04847bca-volume-contents C->S DockerVolumeServer GET /metrics
+[2025-09-20T11:25:36.913788600Z][com.docker.backend.exe][I] Executing: [powershell -NoProfile -Command &{ Get-CimInstance Win32_ComputerSystem | Select-Object -ExcludeProperty Cim*, OemLogoBitMap -Property *| ConvertTo-Json }]
+[2025-09-20T11:25:36.914792500Z][com.docker.backend.exe.apiproxy][I] << HEAD /_ping (13.3797ms)
+[2025-09-20T11:25:36.917875800Z][com.docker.backend.exe.apiproxy][I] >> GET /v1.45/info
+[2025-09-20T11:25:36.918483000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:36.917050800Z][init.ipc][I] (b1503c8f) db8aad13-volume-contents S<-C 04847bca-volume-contents GET /metrics
+[2025-09-20T11:25:36.918483000Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:36.917050800Z][init.ipc][I] (b1503c8f) db8aad13-volume-contents S<-C 04847bca-volume-contents GET /metrics
+[2025-09-20T11:25:36.918483000Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:36.917511200Z][init.ipc][I] (b1503c8f) db8aad13-volume-contents S->C 04847bca-volume-contents GET /metrics (480.7µs): {"count":0}
+[2025-09-20T11:25:36.918991700Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:36.917511200Z][init.ipc][I] (b1503c8f) db8aad13-volume-contents S->C 04847bca-volume-contents GET /metrics (480.7µs): {"count":0}
+[2025-09-20T11:25:36.919604800Z][com.docker.backend.exe.ipc][I] (b1503c8f) 04847bca-volume-contents C<-S db8aad13-volume-contents GET /metrics (9.5609ms): {"count":0}
+[2025-09-20T11:25:36.920049500Z][com.docker.backend.exe.heartbeat][I] volume-contents data added: <none>
+[2025-09-20T11:25:36.920675800Z][com.docker.backend.exe.apiproxy][I] >> GET /events?filters=%7B%22event%22%3A%5B%22load%22%2C%22pull%22%2C%22tag%22%2C%22import%22%5D%7D
+[2025-09-20T11:25:36.923710400Z][com.docker.backend.exe.ipc][I] (4442ef68) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /app/settings
+[2025-09-20T11:25:36.924288400Z][com.docker.backend.exe.daemonconfigloader][I] get daemon config: {"builder":{"gc":{"defaultKeepStorage":"20GB","enabled":true}},"experimental":false}
+[2025-09-20T11:25:36.925821500Z][com.docker.backend.exe.ipc][I] (4442ef68) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /app/settings (2.1111ms)
+[2025-09-20T11:25:36.928350500Z][com.docker.backend.exe.ipc][I] (b17842c2) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /app/settings
+[2025-09-20T11:25:36.929477700Z][com.docker.backend.exe.daemonconfigloader][I] get daemon config: {"builder":{"gc":{"defaultKeepStorage":"20GB","enabled":true}},"experimental":false}
+[2025-09-20T11:25:36.930363700Z][com.docker.backend.exe.ipc][I] (b17842c2) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) GET /app/settings (2.0132ms)
+[2025-09-20T11:25:36.934114300Z][com.docker.backend.exe.ipc][I] (3569d260) 1223629d-BackendAPI S<-C Docker Desktop API POST /analytics/track
+[2025-09-20T11:25:36.935128800Z][com.docker.backend.exe.ipc][I] (3569d260) 1223629d-BackendAPI S<-C Docker Desktop API bind: {"body":{"action":"request","devenvs_version":"v0.2.7","duration_secs":0.0290476,"method":"GET","route":"/ping","start_time":"2025-09-20T16:55:36.9013161+05:30","status_code":404,"user_agent":"Docker-Desktop/4.29.0 (Windows; amd64)"},"event":"eventDevEnvironments"}
+[2025-09-20T11:25:36.936234100Z][com.docker.backend.exe.ipc][I] (3569d260) 1223629d-BackendAPI S->C Docker Desktop API POST /analytics/track (2.1198ms): OK
+[2025-09-20T11:25:36.936767800Z][com.docker.backend.exe.tracker][I] sending event: eventDevEnvironments
+[2025-09-20T11:25:36.936767800Z][com.docker.backend.exe.ipc][W] (9d0e3f88) b290773e-devenvs-heartbeat C<-S UnknownServer GET /ping (38.4761ms): Not Found
+[2025-09-20T11:25:36.937850800Z][com.docker.backend.exe.heartbeat][I] devenvs data added: <none>
+[2025-09-20T11:25:36.945547400Z][com.docker.backend.exe.apiproxy][I] << GET /v1.45/info (27.6716ms)
+[2025-09-20T11:25:36.946598200Z][com.docker.backend.exe.apiproxy][I] >> GET /v1.45/version
+[2025-09-20T11:25:36.951788800Z][com.docker.backend.exe.heartbeat][I] registryclient data added: <none>
+[2025-09-20T11:25:36.963431000Z][com.docker.backend.exe.apiproxy][I] << GET /v1.45/version (16.8328ms)
+[2025-09-20T11:25:36.965250300Z][com.docker.backend.exe.apiproxy][I] >> GET /v1.45/containers/json?filters=%7B%22label%22%3A%7B%22com.docker.compose.project%22%3Atrue%7D%2C%22status%22%3A%7B%22running%22%3Atrue%7D%7D
+[2025-09-20T11:25:36.970586400Z][com.docker.backend.exe.apiproxy][I] << GET /v1.45/containers/json?filters=%7B%22label%22%3A%7B%22com.docker.compose.project%22%3Atrue%7D%2C%22status%22%3A%7B%22running%22%3Atrue%7D%7D (5.3361ms)
+[2025-09-20T11:25:36.974006900Z][com.docker.backend.exe.heartbeat][I] dockerengine data added: Architecture, Graphdriver, Kernel, DockerOs, OsType, SwarmStatus, Commit, Version
+[2025-09-20T11:25:37.024302200Z][com.docker.backend.exe.ipc][I] (d9559ddd) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:37.024302200Z][com.docker.backend.exe.ipc][I] (d9559ddd) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:37.025926800Z][com.docker.backend.exe.ipc][I] (72d7aea3) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:37.026040300Z][com.docker.backend.exe.ipc][I] (72d7aea3) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (113.5µs)
+[2025-09-20T11:25:37.026547100Z][com.docker.backend.exe.ipc][I] (500ec609) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:37.026547100Z][com.docker.backend.exe.ipc][I] (500ec609) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:37.026859800Z][com.docker.backend.exe.ipc][I] (ae97ea1a) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:37.026859800Z][com.docker.backend.exe.ipc][I] (ae97ea1a) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:37.032819900Z][com.docker.backend.exe.ipc][I] (a1612023) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:37.032819900Z][com.docker.backend.exe.ipc][I] (a1612023) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:37.033361600Z][com.docker.backend.exe.ipc][I] (d9de8fd7) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:37.033361600Z][com.docker.backend.exe.apiproxy][I] >> GET /containers/json?all=true
+[2025-09-20T11:25:37.033361600Z][com.docker.backend.exe.ipc][I] (d9de8fd7) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:37.033910200Z][com.docker.backend.exe.apiproxy][I] >> GET /system/df
+[2025-09-20T11:25:37.033964300Z][com.docker.backend.exe.apiproxy][I] >> GET /images/json
+[2025-09-20T11:25:37.033964300Z][com.docker.backend.exe.apiproxy][I] >> GET /volumes
+[2025-09-20T11:25:37.040749700Z][com.docker.backend.exe.apiproxy][I] << GET /volumes (6.7854ms)
+[2025-09-20T11:25:37.040749700Z][com.docker.backend.exe.apiproxy][I] << GET /images/json (6.7854ms)
+[2025-09-20T11:25:37.042374600Z][com.docker.backend.exe.apiproxy][I] << GET /system/df (8.4644ms)
+[2025-09-20T11:25:37.042374600Z][com.docker.backend.exe.apiproxy][I] << GET /containers/json?all=true (9.013ms)
+[2025-09-20T11:25:37.089896000Z][com.docker.backend.exe.processes][I] parsed {vmmemWSL 14148 2.15625s 9.8684378s 20250920165527.221186+330}
+[2025-09-20T11:25:37.089896000Z][com.docker.backend.exe.processes][I] Retrieved cpu times 20250920165527.221186+330
+[2025-09-20T11:25:37.089896000Z][com.docker.backend.exe.idlemetrics][I] Compute time at run 2.15625s / 9.8684378s added to 0s / 0s total 2.15625s / 9.8684378s
+[2025-09-20T11:25:37.090401100Z][com.docker.backend.exe.heartbeat][I] idle data added: IdleMetrics.TimeRunning, IdleMetrics.TimeComputing, IdleTransitions
+[2025-09-20T11:25:37.106029300Z][com.docker.backend.exe.ipc][I] (01d62534) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:37.106029300Z][com.docker.backend.exe.ipc][I] (01d62534) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (0s)
+[2025-09-20T11:25:37.147107000Z][com.docker.backend.exe.heartbeat][I] platform-specific data added: WslExtraData, WslKernelVersion, WslVersion, InstallationType
+[2025-09-20T11:25:37.147799300Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:37.146701200Z][init.ipc][I] (6230cba2) db8aad13-volume-contents S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /volumes
+[2025-09-20T11:25:37.148157800Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:37.146701200Z][init.ipc][I] (6230cba2) db8aad13-volume-contents S<-C Docker-Desktop/4.29.0 (Windows; x64) GET /volumes
+[2025-09-20T11:25:37.148157800Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:37.146851400Z][init][I] reading : /var/lib/docker/volumes
+[2025-09-20T11:25:37.148157800Z][com.docker.backend.exe.wslengine][I] WSLBootstrap: [2025-09-20T11:25:37.147180000Z][init.ipc][I] (6230cba2) db8aad13-volume-contents S->C Docker-Desktop/4.29.0 (Windows; x64) GET /volumes (410.3µs): {"contents":[{"atime":"2025-09-20T11:25:36.462379Z","mode":"Drw-------","mtime":"2025-09-20T11:25:36.462379Z","name":"backingFsBlockDev","size":0,"type":"file"},{"atime":"2025-09-20T11:25:36.462379Z","mode":"-rw-------","mtime":"2025-09-20T11:25:36.472379Z","name":"metadata.db","size":32,"type":"file"}]}
+[2025-09-20T11:25:37.148157800Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:37.146851400Z][init][I] reading : /var/lib/docker/volumes
+[2025-09-20T11:25:37.148157800Z][com.docker.backend.exe.logwriterwithscanner][I] [2025-09-20T11:25:37.147180000Z][init.ipc][I] (6230cba2) db8aad13-volume-contents S->C Docker-Desktop/4.29.0 (Windows; x64) GET /volumes (410.3µs): {"contents":[{"atime":"2025-09-20T11:25:36.462379Z","mode":"Drw-------","mtime":"2025-09-20T11:25:36.462379Z","name":"backingFsBlockDev","size":0,"type":"file"},{"atime":"2025-09-20T11:25:36.462379Z","mode":"-rw-------","mtime":"2025-09-20T11:25:36.472379Z","name":"metadata.db","size":32,"type":"file"}]}
+[2025-09-20T11:25:37.154711100Z][com.docker.backend.exe.apiproxy][I] >> GET /events?since=1758367537
+[2025-09-20T11:25:37.161307800Z][com.docker.backend.exe.apiproxy][I] >> GET /containers/json?all=true
+[2025-09-20T11:25:37.166264800Z][com.docker.backend.exe.apiproxy][I] << GET /containers/json?all=true (4.957ms)
+[2025-09-20T11:25:37.172735100Z][com.docker.backend.exe.apiproxy][I] >> GET /events?since=1758367537
+[2025-09-20T11:25:37.305308000Z][com.docker.backend.exe.ipc][I] (c9673421) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) POST /usage
+[2025-09-20T11:25:37.305308000Z][com.docker.backend.exe.ipc][I] (c9673421) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) bind: {"command":"containersOpened","count":1,"duration_secs":0}
+[2025-09-20T11:25:37.305308000Z][com.docker.backend.exe.ipc][I] (c9673421) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) POST /usage (0s): OK
+[2025-09-20T11:25:37.306351000Z][com.docker.backend.exe.ipc][I] (1121e3d2) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) POST /analytics/track
+[2025-09-20T11:25:37.306351000Z][com.docker.backend.exe.ipc][I] (1121e3d2) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) bind: {"body":{"action":"ContainersScreenDisplayed","context":"on mount","tab":"ContainersEmptyTab"},"event":"eventEmptyState"}
+[2025-09-20T11:25:37.307991700Z][com.docker.backend.exe.ipc][I] (1121e3d2) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) POST /analytics/track (1.6407ms): OK
+[2025-09-20T11:25:37.308568400Z][com.docker.backend.exe.tracker][I] sending event: eventEmptyState
+[2025-09-20T11:25:39.843914700Z][com.docker.backend.exe][I] Executing: [powershell -NoProfile -Command &{ Get-CimInstance Win32_BaseBoard | Select-Object -ExcludeProperty Cim* -Property * | ConvertTo-Json }]
+[2025-09-20T11:25:40.532017100Z][com.docker.backend.exe.segment][I] flushing 4 messages
+[2025-09-20T11:25:40.805596300Z][com.docker.backend.exe.segment][I] response 200 OK
+[2025-09-20T11:25:41.366117000Z][com.docker.backend.exe.heartbeat][I] gatherer data added: PublicFeatures, Arch, DistroName, DistroVersion, DistroRelease, FirstLaunchTime, HostHypervisor, HostLogicalCPUs, HostMemoryMB
+[2025-09-20T11:25:41.367190900Z][com.docker.backend.exe.tracker][I] queuing DailyHeartbeat
+[2025-09-20T11:25:41.367709400Z][com.docker.backend.exe.tracker][I] sending event: dailyHeartbeat
+[2025-09-20T11:25:41.368228800Z][com.docker.backend.exe.tracker][I] sending event: dailyCliUsage
+[2025-09-20T11:25:41.887989400Z][com.docker.backend.exe.ipc][I] (1e4dc6bf) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:25:42.891225400Z][com.docker.backend.exe.ipc][I] (1e4dc6bf) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.003236s): {"cpuPercentage":0.33277870216306155,"memAvailableBytes":5989524000,"memBytes":1111416000,"numCPU":12}
+[2025-09-20T11:25:45.536808200Z][com.docker.backend.exe.segment][I] flushing 2 messages
+[2025-09-20T11:25:45.806561000Z][com.docker.backend.exe.segment][I] response 200 OK
+[2025-09-20T11:25:46.896170000Z][com.docker.backend.exe.ipc][I] (e91b7afb) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:25:47.898872200Z][com.docker.backend.exe.ipc][I] (e91b7afb) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0027022s): {"cpuPercentage":0.08340283569641367,"memAvailableBytes":5989524000,"memBytes":1113416000,"numCPU":12}
+[2025-09-20T11:25:51.903115100Z][com.docker.backend.exe.ipc][I] (13670441) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:25:52.906416600Z][com.docker.backend.exe.ipc][I] (13670441) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0033015s): {"memAvailableBytes":5989524000,"memBytes":1113416000,"numCPU":12}
+[2025-09-20T11:25:53.539915600Z][com.docker.backend.exe.ipc][I] (27ae7388) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 POST /usage
+[2025-09-20T11:25:53.539915600Z][com.docker.backend.exe.ipc][I] (27ae7388) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 bind: {"command":"info","context":"moby","count":1,"duration_secs":0.1791887,"source":"cli","status":"failure"}
+[2025-09-20T11:25:53.540450300Z][com.docker.backend.exe.ipc][I] (27ae7388) 0e46de2b-CLIAPI S->C Go-http-client/1.1 POST /usage (534.7µs): OK
+[2025-09-20T11:25:55.860485600Z][com.docker.backend.exe.ipc][I] (652c324e) 1223629d-BackendAPI S<-C 0cf3ebc7-desktop_extensions GET /settings
+[2025-09-20T11:25:55.860991500Z][com.docker.backend.exe.ipc][I] (652c324e) 1223629d-BackendAPI S->C 0cf3ebc7-desktop_extensions GET /settings (505.9µs)
+[2025-09-20T11:25:55.868376200Z][com.docker.backend.exe.ipc][I] (2e7fe56c) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) POST /analytics/track
+[2025-09-20T11:25:55.868376200Z][com.docker.backend.exe.ipc][I] (2e7fe56c) 1223629d-BackendAPI S<-C Docker-Desktop/4.29.0 (Windows; x64) bind: {"body":{"displayHeight":864,"displayWidth":"float64","isFullScreen":false,"screenTitle":"Containers - Docker Desktop","windowHeight":720,"windowWidth":"float64"},"event":"eventScreenSize"}
+[2025-09-20T11:25:55.870456200Z][com.docker.backend.exe.ipc][I] (2e7fe56c) 1223629d-BackendAPI S->C Docker-Desktop/4.29.0 (Windows; x64) POST /analytics/track (2.08ms): OK
+[2025-09-20T11:25:55.870456200Z][com.docker.backend.exe.tracker][I] sending event: eventScreenSize
+[2025-09-20T11:25:56.889814600Z][com.docker.backend.exe.ipc][I] (61a0c0e4) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:25:57.892963700Z][com.docker.backend.exe.ipc][I] (61a0c0e4) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0031491s): {"memAvailableBytes":5989524000,"memBytes":1113400000,"numCPU":12}
+[2025-09-20T11:25:59.041751400Z][com.docker.backend.exe.ipc][I] (1df3b759) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 POST /usage
+[2025-09-20T11:25:59.041751400Z][com.docker.backend.exe.ipc][I] (1df3b759) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 bind: {"command":"info","context":"moby","count":1,"duration_secs":0.209685,"source":"cli","status":"failure"}
+[2025-09-20T11:25:59.041751400Z][com.docker.backend.exe.ipc][I] (1df3b759) 0e46de2b-CLIAPI S->C Go-http-client/1.1 POST /usage (0s): OK
+[2025-09-20T11:26:00.539625000Z][com.docker.backend.exe.segment][I] flushing 1 messages
+[2025-09-20T11:26:00.799545200Z][com.docker.backend.exe.segment][I] response 200 OK
+[2025-09-20T11:26:01.901918700Z][com.docker.backend.exe.ipc][I] (5b29a677) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:02.906209600Z][com.docker.backend.exe.ipc][I] (5b29a677) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0043769s): {"memAvailableBytes":5989524000,"memBytes":1113420000,"numCPU":12}
+[2025-09-20T11:26:04.290484700Z][com.docker.backend.exe.ipc][I] (b528d89b) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 POST /usage
+[2025-09-20T11:26:04.290484700Z][com.docker.backend.exe.ipc][I] (b528d89b) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 bind: {"command":"info","context":"moby","count":1,"duration_secs":0.1770706,"source":"cli","status":"failure"}
+[2025-09-20T11:26:04.290484700Z][com.docker.backend.exe.ipc][I] (b528d89b) 0e46de2b-CLIAPI S->C Go-http-client/1.1 POST /usage (0s): OK
+[2025-09-20T11:26:06.892916900Z][com.docker.backend.exe.ipc][I] (dbdc9254) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:07.895816200Z][com.docker.backend.exe.ipc][I] (dbdc9254) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0028993s): {"memAvailableBytes":5989524000,"memBytes":1117500000,"numCPU":12}
+[2025-09-20T11:26:09.553777500Z][com.docker.backend.exe.ipc][I] (73e99985) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 POST /usage
+[2025-09-20T11:26:09.553777500Z][com.docker.backend.exe.ipc][I] (73e99985) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 bind: {"command":"info","context":"moby","count":1,"duration_secs":0.1803421,"source":"cli","status":"failure"}
+[2025-09-20T11:26:09.553777500Z][com.docker.backend.exe.ipc][I] (73e99985) 0e46de2b-CLIAPI S->C Go-http-client/1.1 POST /usage (0s): OK
+[2025-09-20T11:26:11.895773000Z][com.docker.backend.exe.ipc][I] (669753f6) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:12.898885800Z][com.docker.backend.exe.ipc][I] (669753f6) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0031128s): {"memAvailableBytes":5989524000,"memBytes":1117752000,"numCPU":12}
+[2025-09-20T11:26:14.811755200Z][com.docker.backend.exe.ipc][I] (e4aadcd1) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 POST /usage
+[2025-09-20T11:26:14.811755200Z][com.docker.backend.exe.ipc][I] (e4aadcd1) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 bind: {"command":"info","context":"moby","count":1,"duration_secs":0.1841355,"source":"cli","status":"failure"}
+[2025-09-20T11:26:14.811755200Z][com.docker.backend.exe.ipc][I] (e4aadcd1) 0e46de2b-CLIAPI S->C Go-http-client/1.1 POST /usage (0s): OK
+[2025-09-20T11:26:16.888505600Z][com.docker.backend.exe.ipc][I] (fbfb4f7b) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:17.892097600Z][com.docker.backend.exe.ipc][I] (fbfb4f7b) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.003592s): {"cpuPercentage":0.24958402662229617,"memAvailableBytes":5989524000,"memBytes":1119608000,"numCPU":12}
+[2025-09-20T11:26:21.903344200Z][com.docker.backend.exe.ipc][I] (9e1096a5) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:22.907144500Z][com.docker.backend.exe.ipc][I] (9e1096a5) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0038003s): {"cpuPercentage":0.16666666666666666,"memAvailableBytes":5989524000,"memBytes":1119608000,"numCPU":12}
+[2025-09-20T11:26:26.642681800Z][com.docker.backend.exe.apiproxy][I] >> GET /v1.24/events?filters=%7B%22event%22%3A%7B%22die%22%3Atrue%2C%22start%22%3Atrue%7D%2C%22type%22%3A%7B%22container%22%3Atrue%7D%7D&since=1758367521.617749800
+[2025-09-20T11:26:26.902658900Z][com.docker.backend.exe.ipc][I] (7dcf8719) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:27.906752200Z][com.docker.backend.exe.ipc][I] (7dcf8719) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0040933s): {"cpuPercentage":0.41562759767248547,"memAvailableBytes":5989524000,"memBytes":1122276000,"numCPU":12}
+[2025-09-20T11:26:31.899157400Z][com.docker.backend.exe.ipc][I] (ed86d380) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:32.903095900Z][com.docker.backend.exe.ipc][I] (ed86d380) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0039385s): {"memAvailableBytes":5989524000,"memBytes":1123172000,"numCPU":12}
+[2025-09-20T11:26:35.698733800Z][com.docker.backend.exe.gvisor/forwarder][I] 35.190.88.7:443 <- 192.168.65.3:35546: dialing 35.190.88.7:443
+[2025-09-20T11:26:35.703108000Z][com.docker.backend.exe.gvisor/forwarder][I] 35.190.88.7:443 <- 192.168.65.3:35546: dial succeeded (1 in-progress TCP connections)
+[2025-09-20T11:26:36.489559700Z][com.docker.backend.exe.ipc][I] (de0f925b) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 POST /usage
+[2025-09-20T11:26:36.489635800Z][com.docker.backend.exe.ipc][I] (de0f925b) 0e46de2b-CLIAPI S<-C Go-http-client/1.1 bind: {"command":"info","context":"moby","count":1,"duration_secs":0.1698297,"source":"cli","status":"failure"}
+[2025-09-20T11:26:36.489635800Z][com.docker.backend.exe.ipc][I] (de0f925b) 0e46de2b-CLIAPI S->C Go-http-client/1.1 POST /usage (584.6µs): OK
+[2025-09-20T11:26:36.898363900Z][com.docker.backend.exe.ipc][I] (a9a5361b) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:37.902123900Z][com.docker.backend.exe.ipc][I] (a9a5361b) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.00376s): {"memAvailableBytes":5989524000,"memBytes":1134512000,"numCPU":12}
+[2025-09-20T11:26:41.888782300Z][com.docker.backend.exe.ipc][I] (47fa8fd2) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:42.892178000Z][com.docker.backend.exe.ipc][I] (47fa8fd2) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.003539s): {"memAvailableBytes":5989524000,"memBytes":1134764000,"numCPU":12}
+[2025-09-20T11:26:46.898144500Z][com.docker.backend.exe.ipc][I] (3bb6ce6e) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:47.901399200Z][com.docker.backend.exe.ipc][I] (3bb6ce6e) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0032547s): {"cpuPercentage":0.33277870216306155,"memAvailableBytes":5989524000,"memBytes":1132756000,"numCPU":12}
+[2025-09-20T11:26:51.888839300Z][com.docker.backend.exe.ipc][I] (83f9b907) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:52.891667100Z][com.docker.backend.exe.ipc][I] (83f9b907) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0027161s): {"memAvailableBytes":5989524000,"memBytes":1132756000,"numCPU":12}
+[2025-09-20T11:26:56.901793800Z][com.docker.backend.exe.ipc][I] (17c7e9a6) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:26:57.904828300Z][com.docker.backend.exe.ipc][I] (17c7e9a6) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0029324s): {"memAvailableBytes":5989524000,"memBytes":1134788000,"numCPU":12}
+[2025-09-20T11:27:01.899495600Z][com.docker.backend.exe.ipc][I] (3d5cf915) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:27:02.903822500Z][com.docker.backend.exe.ipc][I] (3d5cf915) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0043269s): {"cpuPercentage":0.08319467554076539,"memAvailableBytes":5989524000,"memBytes":1132820000,"numCPU":12}
+[2025-09-20T11:27:06.897856500Z][com.docker.backend.exe.ipc][I] (4b418ced) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:27:07.901152900Z][com.docker.backend.exe.ipc][I] (4b418ced) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0032964s): {"memAvailableBytes":5989524000,"memBytes":1134852000,"numCPU":12}
+[2025-09-20T11:27:11.901941300Z][com.docker.backend.exe.ipc][I] (2c2de0c1) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:27:12.905417400Z][com.docker.backend.exe.ipc][I] (2c2de0c1) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0034761s): {"cpuPercentage":0.16666666666666666,"memAvailableBytes":5989524000,"memBytes":1135100000,"numCPU":12}
+[2025-09-20T11:27:16.895624200Z][com.docker.backend.exe.ipc][I] (2d04b250) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:27:17.899075200Z][com.docker.backend.exe.ipc][I] (2d04b250) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.003451s): {"cpuPercentage":0.16652789342214822,"memAvailableBytes":5989524000,"memBytes":1133036000,"numCPU":12}
+[2025-09-20T11:27:21.888637400Z][com.docker.backend.exe.ipc][I] (f49c28bf) 9e34e1cc-stats C->S stats GET /vm/ram-cpu-usage
+[2025-09-20T11:27:22.891553100Z][com.docker.backend.exe.ipc][I] (f49c28bf) 9e34e1cc-stats C<-S 6791aed3-stats GET /vm/ram-cpu-usage (1.0029157s): {"cpuPercentage":0.16652789342214822,"memAvailableBytes":5989524000,"memBytes":1133260000,"numCPU":12}
